@@ -20165,7 +20165,7 @@ MonoBehaviour:
   panelWin: {fileID: 0}
   panelLose: {fileID: 0}
   rb: {fileID: 1803646642}
-  jumpForce: 10
+  jumpForce: 4.5
   moveSpeed: 5
   accelerationSpeed: 1
   timePassed: 0.5
