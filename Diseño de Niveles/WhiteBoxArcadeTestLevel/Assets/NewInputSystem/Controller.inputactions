@@ -72,7 +72,7 @@
                     "id": "78db9f6d-ab56-4582-9b51-d12a7c6c6f3f",
                     "path": "<Keyboard>/d",
                     "interactions": "Press",
-                    "processors": "",
+                    "processors": "AxisDeadzone",
                     "groups": "",
                     "action": "Move",
                     "isComposite": false,
