@@ -11425,6 +11425,7 @@ GameObject:
   - component: {fileID: 963194228}
   - component: {fileID: 963194227}
   - component: {fileID: 963194226}
+  - component: {fileID: 963194229}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -11498,6 +11499,40 @@ Transform:
   m_Father: {fileID: 1803646646}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 12.819, y: -170.582, z: 2.107}
+--- !u!114 &963194229
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 963194225}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72ece51f2901e7445ab60da3685d6b5f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ShowDebugText: 0
+  m_ShowCameraFrustum: 1
+  m_IgnoreTimeScale: 0
+  m_WorldUpOverride: {fileID: 0}
+  m_UpdateMethod: 2
+  m_BlendUpdateMethod: 1
+  m_DefaultBlend:
+    m_Style: 1
+    m_Time: 2
+    m_CustomCurve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+  m_CustomBlends: {fileID: 0}
+  m_CameraCutEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_CameraActivatedEvent:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &964427254
 GameObject:
   m_ObjectHideFlags: 0
@@ -17956,6 +17991,51 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1547626387}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1561596667
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1561596668}
+  - component: {fileID: 1561596669}
+  m_Layer: 0
+  m_Name: Container
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1561596668
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1561596667}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -1.62}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1803646646}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!135 &1561596669
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1561596667}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1566220860
 GameObject:
   m_ObjectHideFlags: 0
@@ -19960,6 +20040,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1803646646}
+  - component: {fileID: 1803646650}
+  - component: {fileID: 1803646649}
+  - component: {fileID: 1803646648}
   - component: {fileID: 1803646647}
   - component: {fileID: 1803646641}
   - component: {fileID: 1803646643}
@@ -19986,7 +20069,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Actions: {fileID: -944628639613478452, guid: f2ef131550d73ec45b0e0a7669056125, type: 3}
-  m_NotificationBehavior: 2
+  m_NotificationBehavior: 0
   m_UIInputModule: {fileID: 0}
   m_DeviceLostEvent:
     m_PersistentCalls:
@@ -20000,9 +20083,9 @@ MonoBehaviour:
   m_ActionEvents:
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1803646647}
+      - m_Target: {fileID: 1803646640}
         m_TargetAssemblyTypeName: MovePlayer, Assembly-CSharp
-        m_MethodName: MovePlayerDoll
+        m_MethodName: 
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -20016,9 +20099,9 @@ MonoBehaviour:
     m_ActionName: Move/Move[/Keyboard/w,/Keyboard/s,/Keyboard/a,/Keyboard/d]
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1803646647}
+      - m_Target: {fileID: 1803646640}
         m_TargetAssemblyTypeName: MovePlayer, Assembly-CSharp
-        m_MethodName: JumpPlayerDoll
+        m_MethodName: 
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -20032,9 +20115,9 @@ MonoBehaviour:
     m_ActionName: Move/Jump[/Keyboard/space]
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1803646647}
+      - m_Target: {fileID: 1803646640}
         m_TargetAssemblyTypeName: MovePlayer, Assembly-CSharp
-        m_MethodName: InteractionPlayerDoll
+        m_MethodName: 
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -20046,6 +20129,14 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: 7d2ed5d9-5b99-4ee7-a0c6-c94659f76017
     m_ActionName: Move/Interaction[/Keyboard/e]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: a17d907b-85af-4f24-a5fa-18f2ce0984cb
+    m_ActionName: Move/Look[/Mouse/delta]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 060b6048-f6f6-4c86-b844-7c83a72391d3
+    m_ActionName: Move/PickUp[/Keyboard/e]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Move
@@ -20145,6 +20236,7 @@ Transform:
   m_Children:
   - {fileID: 1115537209}
   - {fileID: 963194228}
+  - {fileID: 1561596668}
   m_Father: {fileID: 0}
   m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -20155,7 +20247,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1803646640}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a386fa66cb43af7458d50d919a93c29a, type: 3}
   m_Name: 
@@ -20167,8 +20259,58 @@ MonoBehaviour:
   rb: {fileID: 1803646642}
   jumpForce: 4.5
   moveSpeed: 5
-  accelerationSpeed: 1
+  accelerationSpeed: 1.16
   timePassed: 0.5
+--- !u!114 &1803646648
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1803646640}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35ec34e72200fec4dbe363cb92dd5a90, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cameraFollowTarget: {fileID: 963194228}
+  playerVcam: {fileID: 963194225}
+  moveSpeed: 4
+--- !u!114 &1803646649
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1803646640}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 176c1bf91e03ae5439fa9244564b0d41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  move: {x: 1.33, y: -0.45}
+  look: {x: 1.04, y: -0.24}
+  pickedUp: 0
+--- !u!114 &1803646650
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1803646640}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dffa6e29c87ca2d4291b50d82038fe76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemtRB: {fileID: 0}
+  itemCollider: {fileID: 0}
+  playerTransform: {fileID: 1803646646}
+  container: {fileID: 1561596668}
+  pickUpRange: 0.65
+  dropForwardForce: 4
+  dropUpwardForce: 8
+  equipaded: 0
 --- !u!1 &1812959050
 GameObject:
   m_ObjectHideFlags: 0

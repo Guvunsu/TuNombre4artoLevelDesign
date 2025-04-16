@@ -1,10 +1,10 @@
-using System.Collections;
-using System.Collections.Generic;
-using Unity.VisualScripting;
-using UnityEngine;
-using UnityEngine.EventSystems;
+//using System.Collections;
+//using System.Collections.Generic;
+//using Unity.VisualScripting;
+//using UnityEngine;
+//using UnityEngine.EventSystems;
 
-public class CamaraMovement : MonoBehaviour {
+//public class CamaraMovement : MonoBehaviour {
     //#region ENUM
     //public enum fsmCamara {
     //    EXIT,
@@ -64,4 +64,4 @@ public class CamaraMovement : MonoBehaviour {
 
 
     //#endregion Collisions
-}
+//}

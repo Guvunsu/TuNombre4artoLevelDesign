@@ -4,7 +4,6 @@ using UnityEngine.InputSystem;
 public class MovePlayer : MonoBehaviour {
 
     // HACER UNA VARIABLE PARA LIMITAR EL NUMERO DE SALTOS 
-    // SABER PORQUE NO SE MUEVE AUNQUE SI LO DETECTE EL MOVIMIENTO 
     #region ENUM
     public enum Player_FSM {
         IDLE,
