@@ -1,9 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+//implementar el new sistem input en las mecanicas de este script
+// acomodar el codigo como yo programo
+// arreglar el bug de tomar algo, teletransportarse y perder creo yo por un momento los colliders
 
-public class PickupController : MonoBehaviour
-{
+public class PickupController : MonoBehaviour {
     [SerializeField] private Rigidbody itemtRB;
     [SerializeField] private Collider itemCollider;
     [SerializeField] private Transform playerTransform;
@@ -14,16 +16,12 @@ public class PickupController : MonoBehaviour
     public static bool slotFull;
     public bool equipaded;
     // Start is called before the first frame update
-    void Start()
-    {
-        if (!equipaded)
-        {
+    void Start() {
+        if (!equipaded) {
             itemtRB.isKinematic = true;
             itemCollider.isTrigger = false;
 
-        }
-        else
-        {
+        } else {
             itemtRB.isKinematic = true;
             itemCollider.isTrigger = true;
             slotFull = true;
@@ -32,29 +30,22 @@ public class PickupController : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
-    {
+    void Update() {
         Vector3 distamceToPlayer = transform.position - transform.position;
-        if (!equipaded && distamceToPlayer.magnitude <= pickUpRange)
-        {
+        if (!equipaded && distamceToPlayer.magnitude <= pickUpRange) {
             gameObject.GetComponent<Renderer>().material.color = Color.magenta;
-            if (Input.GetKeyDown(KeyCode.E) && !slotFull)
-            {
+            if (Input.GetKeyDown(KeyCode.E) && !slotFull) {
                 PickUp();
             }
-        }
-        else
-        {
+        } else {
             gameObject.GetComponent<Renderer>().material.color = Color.red;
         }
-        if (equipaded && Input.GetKeyDown(KeyCode.Q))
-        {
+        if (equipaded && Input.GetKeyDown(KeyCode.Q)) {
             Drop();
         }
 
     }
-    private void PickUp()
-    {
+    private void PickUp() {
         equipaded = true;
         slotFull = true;
         gameObject.GetComponent<Renderer>().material.color = Color.white;
@@ -70,8 +61,7 @@ public class PickupController : MonoBehaviour
         itemCollider.isTrigger = true;
     }
 
-    private void Drop()
-    {
+    private void Drop() {
         equipaded = false;
         slotFull = false;
 

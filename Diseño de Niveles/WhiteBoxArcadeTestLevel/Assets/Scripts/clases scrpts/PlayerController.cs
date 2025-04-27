@@ -1,7 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.InputSystem;
+// acomodar el codigo de paolade clase en funciones y como yo programaria
+// implementar mis Collsisions y triggers de mi nivel
+// implementar el salto 
+// arreglar el movimiento y experimentar
 
 public class PlayerController : MonoBehaviour
 {
