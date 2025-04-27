@@ -1,8 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-//implementar el new sistem input en las mecanicas de este script
+//implementar el new sistem script_PlayerInputManager en las mecanicas de este script
 // acomodar el codigo como yo programo
+// implementar mis Collsisions y triggers de mi nivel
 // arreglar el bug de tomar algo, teletransportarse y perder creo yo por un momento los colliders
 
 public class PickupController : MonoBehaviour {
