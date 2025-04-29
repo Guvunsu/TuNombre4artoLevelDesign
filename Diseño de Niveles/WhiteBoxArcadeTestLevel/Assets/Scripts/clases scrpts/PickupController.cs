@@ -3,8 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 //implementar el new sistem script_PlayerInputManager en las mecanicas de este script
 // acomodar el codigo como yo programo
-// implementar mis Collsisions y triggers de mi nivel
-// arreglar el bug de tomar algo, teletransportarse y perder creo yo por un momento los colliders
+// implementar mis Collsisions y triggers de mi nivel para interactuar con los objetos 
+
+// arreglar el bug de tomar algo, teletransportarse y perder creo yo por un momento los colliders (corregido)
 
 public class PickupController : MonoBehaviour {
     [SerializeField] private Rigidbody itemtRB;
@@ -46,6 +47,8 @@ public class PickupController : MonoBehaviour {
         }
 
     }
+
+    #region Take&DropItems
     private void PickUp() {
         equipaded = true;
         slotFull = true;
@@ -77,4 +80,10 @@ public class PickupController : MonoBehaviour {
         float random = Random.Range(-4f, 1f);
         itemtRB.AddTorque(new Vector3(random, random, random) * 10);
     }
+
+    #endregion Take&DropItems
+
+    #region Colliders&Triggers
+
+    #endregion Colliders&Triggers
 }

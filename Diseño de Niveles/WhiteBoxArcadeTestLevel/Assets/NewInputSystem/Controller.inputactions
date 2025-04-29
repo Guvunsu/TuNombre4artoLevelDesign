@@ -43,12 +43,12 @@
                 },
                 {
                     "name": "PickUp",
-                    "type": "Value",
+                    "type": "Button",
                     "id": "060b6048-f6f6-4c86-b844-7c83a72391d3",
-                    "expectedControlType": "Vector2",
+                    "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
-                    "initialStateCheck": true
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
