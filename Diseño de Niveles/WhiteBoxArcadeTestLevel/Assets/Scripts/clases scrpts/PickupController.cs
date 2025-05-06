@@ -15,6 +15,7 @@ public class PickupController : MonoBehaviour {
     [SerializeField] private float pickUpRange;
     [SerializeField] private float dropForwardForce;
     [SerializeField] private float dropUpwardForce;
+    [SerializeField] private float throwForce;
     public static bool slotFull;
     public bool equipaded;
     // Start is called before the first frame update
@@ -79,11 +80,35 @@ public class PickupController : MonoBehaviour {
         //add random rotation
         float random = Random.Range(-4f, 1f);
         itemtRB.AddTorque(new Vector3(random, random, random) * 10);
+
+        if (gameObject.CompareTag("BowlBall")) {
+            Vector3 throwDirection = playerTransform.forward + Vector3.up * 0.5f;
+            GetComponent<Rigidbody>().isKinematic = false;
+            GetComponent<Rigidbody>().AddForce(throwDirection * throwForce, ForceMode.Impulse);
+        }
+        if (gameObject.CompareTag("BomberTruck")) {
+            StartCoroutine(MoveForwardUntilCollision());
+        }
     }
 
+    IEnumerator MoveForwardUntilCollision() {
+        float moveSpeed = 20f;
+        while (true) {
+            transform.position += transform.forward * moveSpeed * Time.deltaTime;
+            yield return null;
+        }
+    }
     #endregion Take&DropItems
 
-    #region Colliders&Triggers
-
-    #endregion Colliders&Triggers
+    void OnCollisionEnter(Collision collision) {
+        if (gameObject.CompareTag("BomberTruck") && collision.gameObject.CompareTag("WallBlock")) {
+            Destroy(collision.gameObject);
+            Destroy(this.gameObject);
+        }
+        if (gameObject.CompareTag("BowlBall") && collision.gameObject.CompareTag("BowlPine")) {
+            Destroy(collision.gameObject);
+            Destroy(this.gameObject);
+        }
+    }
 }
+

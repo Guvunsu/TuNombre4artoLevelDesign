@@ -144,7 +144,7 @@
                     "name": "",
                     "id": "cb319c7a-d549-4af8-a6e6-7e202d680575",
                     "path": "<Keyboard>/e",
-                    "interactions": "",
+                    "interactions": "Press",
                     "processors": "",
                     "groups": "",
                     "action": "PickUp",

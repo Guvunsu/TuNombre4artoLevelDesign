@@ -138,7 +138,7 @@ GameObject:
   - component: {fileID: 3279695}
   m_Layer: 0
   m_Name: BlockWallSecondLayer
-  m_TagString: Untagged
+  m_TagString: WallBlock
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -251,7 +251,7 @@ GameObject:
   - component: {fileID: 6775298}
   m_Layer: 0
   m_Name: CABINE
-  m_TagString: Untagged
+  m_TagString: BomberTruck
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -348,7 +348,7 @@ GameObject:
   - component: {fileID: 9312925}
   m_Layer: 0
   m_Name: Lights (1)
-  m_TagString: Untagged
+  m_TagString: BomberTruck
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -443,7 +443,7 @@ GameObject:
   - component: {fileID: 19872125}
   m_Layer: 0
   m_Name: CanastaBasketball
-  m_TagString: Untagged
+  m_TagString: BasketBall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -846,7 +846,7 @@ GameObject:
   - component: {fileID: 56648183}
   m_Layer: 0
   m_Name: BlockWallSecondLayer
-  m_TagString: Untagged
+  m_TagString: WallBlock
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1073,7 +1073,7 @@ GameObject:
   - component: {fileID: 79511869}
   m_Layer: 0
   m_Name: Body
-  m_TagString: Untagged
+  m_TagString: BomberTruck
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1267,7 +1267,7 @@ GameObject:
   - component: {fileID: 118027740}
   m_Layer: 0
   m_Name: CABINE
-  m_TagString: Untagged
+  m_TagString: BomberTruck
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1559,7 +1559,7 @@ GameObject:
   - component: {fileID: 123359624}
   m_Layer: 0
   m_Name: BlockWallSecondLayer (3)
-  m_TagString: Untagged
+  m_TagString: WallBlock
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1901,7 +1901,7 @@ GameObject:
   - component: {fileID: 152265589}
   m_Layer: 0
   m_Name: BlocksWallSurface
-  m_TagString: Untagged
+  m_TagString: WallBlock
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2014,7 +2014,7 @@ GameObject:
   - component: {fileID: 155627658}
   m_Layer: 0
   m_Name: CANASTA
-  m_TagString: Untagged
+  m_TagString: BasketBall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2112,7 +2112,7 @@ GameObject:
   - component: {fileID: 158616439}
   m_Layer: 0
   m_Name: BlocksWall1firstLayer
-  m_TagString: Untagged
+  m_TagString: WallBlock
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2225,7 +2225,7 @@ GameObject:
   - component: {fileID: 159302160}
   m_Layer: 0
   m_Name: Stairs
-  m_TagString: Untagged
+  m_TagString: BomberTruck
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2439,7 +2439,7 @@ GameObject:
   - component: {fileID: 182997555}
   m_Layer: 0
   m_Name: BlockWallSecondLayer
-  m_TagString: Untagged
+  m_TagString: WallBlock
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2746,7 +2746,7 @@ GameObject:
   - component: {fileID: 194482000}
   m_Layer: 0
   m_Name: Sphere (1)
-  m_TagString: Untagged
+  m_TagString: KeyVitrina
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2843,7 +2843,7 @@ GameObject:
   - component: {fileID: 198086178}
   m_Layer: 0
   m_Name: Palo
-  m_TagString: Untagged
+  m_TagString: BasketBall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3169,7 +3169,7 @@ GameObject:
   - component: {fileID: 204545543}
   m_Layer: 0
   m_Name: WheelsBackLeft
-  m_TagString: Untagged
+  m_TagString: BomberTruck
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3495,7 +3495,7 @@ GameObject:
   - component: {fileID: 253310805}
   m_Layer: 0
   m_Name: Grupo Balones
-  m_TagString: Untagged
+  m_TagString: BasketBall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3536,7 +3536,7 @@ GameObject:
   - component: {fileID: 254703832}
   m_Layer: 0
   m_Name: BlocksWallSurface
-  m_TagString: Untagged
+  m_TagString: WallBlock
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3649,7 +3649,7 @@ GameObject:
   - component: {fileID: 281673539}
   m_Layer: 0
   m_Name: canasta
-  m_TagString: Untagged
+  m_TagString: BasketBall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3958,7 +3958,7 @@ GameObject:
   - component: {fileID: 335621245}
   m_Layer: 0
   m_Name: BlocksWall1firstLayer
-  m_TagString: Untagged
+  m_TagString: WallBlock
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4072,7 +4072,7 @@ GameObject:
   - component: {fileID: 358017259}
   m_Layer: 0
   m_Name: BlocksWallSurface
-  m_TagString: Untagged
+  m_TagString: WallBlock
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4525,7 +4525,7 @@ GameObject:
   - component: {fileID: 381666601}
   m_Layer: 0
   m_Name: BlocksWallSurface
-  m_TagString: Untagged
+  m_TagString: WallBlock
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4639,7 +4639,7 @@ GameObject:
   - component: {fileID: 382911660}
   m_Layer: 0
   m_Name: BlocksWall1firstLayer (11)
-  m_TagString: Untagged
+  m_TagString: WallBlock
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4753,7 +4753,7 @@ GameObject:
   - component: {fileID: 384171181}
   m_Layer: 0
   m_Name: BlocksWallSurface
-  m_TagString: Untagged
+  m_TagString: WallBlock
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4961,7 +4961,7 @@ GameObject:
   - component: {fileID: 392149045}
   m_Layer: 0
   m_Name: BlocksWall1firstLayer
-  m_TagString: Untagged
+  m_TagString: WallBlock
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5171,7 +5171,7 @@ GameObject:
   - component: {fileID: 396481165}
   m_Layer: 0
   m_Name: window
-  m_TagString: Untagged
+  m_TagString: BomberTruck
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5384,7 +5384,7 @@ GameObject:
   - component: {fileID: 401176789}
   m_Layer: 0
   m_Name: Body
-  m_TagString: Untagged
+  m_TagString: BomberTruck
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5693,7 +5693,7 @@ GameObject:
   - component: {fileID: 432466367}
   m_Layer: 0
   m_Name: BlocksWall1firstLayer (9)
-  m_TagString: Untagged
+  m_TagString: WallBlock
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5975,7 +5975,7 @@ GameObject:
   - component: {fileID: 465280515}
   m_Layer: 0
   m_Name: BlockWallSecondLayer (8)
-  m_TagString: Untagged
+  m_TagString: WallBlock
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6088,7 +6088,7 @@ GameObject:
   - component: {fileID: 465453998}
   m_Layer: 0
   m_Name: Palo (1)
-  m_TagString: Untagged
+  m_TagString: BasketBall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6415,7 +6415,7 @@ GameObject:
   - component: {fileID: 489459212}
   m_Layer: 0
   m_Name: BlocksWall1firstLayer
-  m_TagString: Untagged
+  m_TagString: WallBlock
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6529,7 +6529,7 @@ GameObject:
   - component: {fileID: 498588327}
   m_Layer: 0
   m_Name: BlockWallSecondLayer (2)
-  m_TagString: Untagged
+  m_TagString: WallBlock
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6642,7 +6642,7 @@ GameObject:
   - component: {fileID: 521977030}
   m_Layer: 0
   m_Name: WheelBackRight
-  m_TagString: Untagged
+  m_TagString: BomberTruck
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6740,7 +6740,7 @@ GameObject:
   - component: {fileID: 545501884}
   m_Layer: 0
   m_Name: BlockWallSecondLayer (4)
-  m_TagString: Untagged
+  m_TagString: WallBlock
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6853,7 +6853,7 @@ GameObject:
   - component: {fileID: 556199700}
   m_Layer: 0
   m_Name: BASE
-  m_TagString: Untagged
+  m_TagString: BasketBall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7102,7 +7102,7 @@ GameObject:
   - component: {fileID: 607973026}
   m_Layer: 0
   m_Name: BlocksWall1firstLayer
-  m_TagString: Untagged
+  m_TagString: WallBlock
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7215,7 +7215,7 @@ GameObject:
   - component: {fileID: 617654855}
   m_Layer: 0
   m_Name: WheelsBackLeft
-  m_TagString: Untagged
+  m_TagString: BomberTruck
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7410,7 +7410,7 @@ GameObject:
   - component: {fileID: 627625325}
   m_Layer: 0
   m_Name: BlockWallSecondLayer
-  m_TagString: Untagged
+  m_TagString: WallBlock
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7617,7 +7617,7 @@ GameObject:
   - component: {fileID: 639628306}
   m_Layer: 0
   m_Name: piramide
-  m_TagString: Untagged
+  m_TagString: CubeWood
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7668,7 +7668,7 @@ GameObject:
   - component: {fileID: 640542709}
   m_Layer: 0
   m_Name: BlockWallSecondLayer
-  m_TagString: Untagged
+  m_TagString: WallBlock
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7782,7 +7782,7 @@ GameObject:
   - component: {fileID: 641887547}
   m_Layer: 0
   m_Name: BlockWallSecondLayer
-  m_TagString: Untagged
+  m_TagString: WallBlock
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7895,7 +7895,7 @@ GameObject:
   - component: {fileID: 643775998}
   m_Layer: 0
   m_Name: CANASTA
-  m_TagString: Untagged
+  m_TagString: BasketBall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7993,7 +7993,7 @@ GameObject:
   - component: {fileID: 643991036}
   m_Layer: 0
   m_Name: BlocksWallSurface
-  m_TagString: Untagged
+  m_TagString: WallBlock
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8106,7 +8106,7 @@ GameObject:
   - component: {fileID: 649389431}
   m_Layer: 0
   m_Name: Parrila
-  m_TagString: Untagged
+  m_TagString: BomberTruck
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8415,7 +8415,7 @@ GameObject:
   - component: {fileID: 672549947}
   m_Layer: 0
   m_Name: BlockWallSecondLayer (6)
-  m_TagString: Untagged
+  m_TagString: WallBlock
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8529,7 +8529,7 @@ GameObject:
   - component: {fileID: 675596167}
   m_Layer: 0
   m_Name: BlocksWall1firstLayer
-  m_TagString: Untagged
+  m_TagString: WallBlock
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9641,7 +9641,7 @@ GameObject:
   - component: {fileID: 741210262}
   m_Layer: 0
   m_Name: canasta
-  m_TagString: Untagged
+  m_TagString: BasketBall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10160,7 +10160,7 @@ GameObject:
   - component: {fileID: 792791436}
   m_Layer: 0
   m_Name: platformTruck
-  m_TagString: Untagged
+  m_TagString: BomberTruck
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10355,7 +10355,7 @@ GameObject:
   - component: {fileID: 797338604}
   m_Layer: 0
   m_Name: BlocksWallSurface
-  m_TagString: Untagged
+  m_TagString: WallBlock
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10565,7 +10565,7 @@ GameObject:
   - component: {fileID: 815002782}
   m_Layer: 0
   m_Name: Base
-  m_TagString: Untagged
+  m_TagString: BasketBall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10662,7 +10662,7 @@ GameObject:
   - component: {fileID: 815204997}
   m_Layer: 0
   m_Name: CANASTA
-  m_TagString: Untagged
+  m_TagString: BasketBall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10973,7 +10973,7 @@ GameObject:
   - component: {fileID: 882936235}
   m_Layer: 0
   m_Name: BlocksWallSurface
-  m_TagString: Untagged
+  m_TagString: WallBlock
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11201,7 +11201,7 @@ GameObject:
   - component: {fileID: 898854426}
   m_Layer: 0
   m_Name: BlocksWall1firstLayer (10)
-  m_TagString: Untagged
+  m_TagString: WallBlock
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11543,7 +11543,7 @@ GameObject:
   - component: {fileID: 918178548}
   m_Layer: 0
   m_Name: BlockWallSecondLayer
-  m_TagString: Untagged
+  m_TagString: WallBlock
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11657,7 +11657,7 @@ GameObject:
   - component: {fileID: 918219902}
   m_Layer: 0
   m_Name: BlocksWall1firstLayer (4)
-  m_TagString: Untagged
+  m_TagString: WallBlock
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11936,7 +11936,7 @@ GameObject:
   - component: {fileID: 934342283}
   m_Layer: 0
   m_Name: BlockWallSecondLayer
-  m_TagString: Untagged
+  m_TagString: WallBlock
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12050,7 +12050,7 @@ GameObject:
   - component: {fileID: 934661368}
   m_Layer: 0
   m_Name: BlocksWallSurface
-  m_TagString: Untagged
+  m_TagString: WallBlock
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12164,7 +12164,7 @@ GameObject:
   - component: {fileID: 947118514}
   m_Layer: 0
   m_Name: BlockWallSecondLayer (7)
-  m_TagString: Untagged
+  m_TagString: WallBlock
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12277,7 +12277,7 @@ GameObject:
   - component: {fileID: 951516931}
   m_Layer: 0
   m_Name: WheelFrontRight
-  m_TagString: Untagged
+  m_TagString: BomberTruck
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12375,7 +12375,7 @@ GameObject:
   - component: {fileID: 956319247}
   m_Layer: 0
   m_Name: BlocksWall1firstLayer
-  m_TagString: Untagged
+  m_TagString: WallBlock
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12489,7 +12489,7 @@ GameObject:
   - component: {fileID: 960717971}
   m_Layer: 0
   m_Name: BlocksWallSurface
-  m_TagString: Untagged
+  m_TagString: WallBlock
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12732,7 +12732,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 18
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 18.021, y: 179.836, z: 0}
 --- !u!114 &963194229
 MonoBehaviour:
@@ -12898,7 +12898,7 @@ GameObject:
   - component: {fileID: 969837165}
   m_Layer: 0
   m_Name: window
-  m_TagString: Untagged
+  m_TagString: BomberTruck
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13092,7 +13092,7 @@ GameObject:
   - component: {fileID: 1004799222}
   m_Layer: 0
   m_Name: WheelsFrontLeft
-  m_TagString: Untagged
+  m_TagString: BomberTruck
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13420,7 +13420,7 @@ GameObject:
   - component: {fileID: 1012075392}
   m_Layer: 0
   m_Name: BlockWallSecondLayer
-  m_TagString: Untagged
+  m_TagString: WallBlock
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13534,7 +13534,7 @@ GameObject:
   - component: {fileID: 1025806563}
   m_Layer: 0
   m_Name: BlockWallSecondLayer
-  m_TagString: Untagged
+  m_TagString: WallBlock
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13647,7 +13647,7 @@ GameObject:
   - component: {fileID: 1026358632}
   m_Layer: 0
   m_Name: Parrilla
-  m_TagString: Untagged
+  m_TagString: BomberTruck
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13744,7 +13744,7 @@ GameObject:
   - component: {fileID: 1029738887}
   m_Layer: 0
   m_Name: CANASTA
-  m_TagString: Untagged
+  m_TagString: BasketBall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14198,7 +14198,7 @@ GameObject:
   - component: {fileID: 1096878750}
   m_Layer: 0
   m_Name: BlockWallSecondLayer
-  m_TagString: Untagged
+  m_TagString: WallBlock
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14683,7 +14683,7 @@ GameObject:
   - component: {fileID: 1125760586}
   m_Layer: 0
   m_Name: WheelFrontRight
-  m_TagString: Untagged
+  m_TagString: BomberTruck
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14781,7 +14781,7 @@ GameObject:
   - component: {fileID: 1137787676}
   m_Layer: 0
   m_Name: BlocksWall1firstLayer (12)
-  m_TagString: Untagged
+  m_TagString: WallBlock
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15052,7 +15052,7 @@ GameObject:
   - component: {fileID: 1157214560}
   m_Layer: 0
   m_Name: Sphere (3)
-  m_TagString: Untagged
+  m_TagString: KeyVitrina
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15263,7 +15263,7 @@ GameObject:
   - component: {fileID: 1180652016}
   m_Layer: 0
   m_Name: Lights (1)
-  m_TagString: Untagged
+  m_TagString: BomberTruck
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15722,7 +15722,7 @@ GameObject:
   - component: {fileID: 1214358957}
   m_Layer: 0
   m_Name: BlockWallSecondLayer (12)
-  m_TagString: Untagged
+  m_TagString: WallBlock
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15951,7 +15951,7 @@ GameObject:
   - component: {fileID: 1229489742}
   m_Layer: 0
   m_Name: canasta
-  m_TagString: Untagged
+  m_TagString: BasketBall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16048,7 +16048,7 @@ GameObject:
   - component: {fileID: 1234101132}
   m_Layer: 0
   m_Name: Cylinder (1)
-  m_TagString: Untagged
+  m_TagString: KeyVitrina
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16340,7 +16340,7 @@ GameObject:
   - component: {fileID: 1255715642}
   m_Layer: 0
   m_Name: platformTruck
-  m_TagString: Untagged
+  m_TagString: BomberTruck
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16551,7 +16551,7 @@ GameObject:
   - component: {fileID: 1271298170}
   m_Layer: 0
   m_Name: Lights
-  m_TagString: Untagged
+  m_TagString: BomberTruck
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16991,7 +16991,7 @@ GameObject:
   - component: {fileID: 1289196642}
   m_Layer: 0
   m_Name: WheelBackRight
-  m_TagString: Untagged
+  m_TagString: BomberTruck
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17356,7 +17356,7 @@ GameObject:
   - component: {fileID: 1345444162}
   m_Layer: 0
   m_Name: BlocksWall1firstLayer (7)
-  m_TagString: Untagged
+  m_TagString: WallBlock
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17470,7 +17470,7 @@ GameObject:
   - component: {fileID: 1346816115}
   m_Layer: 0
   m_Name: BlocksWall1firstLayer (8)
-  m_TagString: Untagged
+  m_TagString: WallBlock
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17584,7 +17584,7 @@ GameObject:
   - component: {fileID: 1348033449}
   m_Layer: 0
   m_Name: BlocksWall1firstLayer (5)
-  m_TagString: Untagged
+  m_TagString: WallBlock
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17814,7 +17814,7 @@ GameObject:
   - component: {fileID: 1393718825}
   m_Layer: 0
   m_Name: BlocksWallSurface
-  m_TagString: Untagged
+  m_TagString: WallBlock
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17927,7 +17927,7 @@ GameObject:
   - component: {fileID: 1393948088}
   m_Layer: 0
   m_Name: Parrila
-  m_TagString: Untagged
+  m_TagString: BomberTruck
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18025,7 +18025,7 @@ GameObject:
   - component: {fileID: 1396320044}
   m_Layer: 0
   m_Name: Base
-  m_TagString: BaseCubeWood
+  m_TagString: CubeWood
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18139,7 +18139,7 @@ GameObject:
   - component: {fileID: 1397626037}
   m_Layer: 0
   m_Name: BlockWallSecondLayer (11)
-  m_TagString: Untagged
+  m_TagString: WallBlock
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18413,7 +18413,7 @@ GameObject:
   - component: {fileID: 1428701720}
   m_Layer: 0
   m_Name: Stairs
-  m_TagString: Untagged
+  m_TagString: BomberTruck
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18511,7 +18511,7 @@ GameObject:
   - component: {fileID: 1433496494}
   m_Layer: 0
   m_Name: BlocksWall1firstLayer
-  m_TagString: Untagged
+  m_TagString: WallBlock
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18738,7 +18738,7 @@ GameObject:
   - component: {fileID: 1455121914}
   m_Layer: 0
   m_Name: Parrilla
-  m_TagString: Untagged
+  m_TagString: BomberTruck
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18835,7 +18835,7 @@ GameObject:
   - component: {fileID: 1482621528}
   m_Layer: 0
   m_Name: WheelsFrontLeft
-  m_TagString: Untagged
+  m_TagString: BomberTruck
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19009,7 +19009,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1491863319}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.245, z: 0}
+  m_LocalPosition: {x: -3.612, y: 1.357, z: -7.824}
   m_LocalScale: {x: 0.48427236, y: 0.48427236, z: 0.48427236}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -19275,7 +19275,7 @@ GameObject:
   - component: {fileID: 1518346077}
   m_Layer: 0
   m_Name: BowlBall (2)
-  m_TagString: BowlPine
+  m_TagString: BowlBall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19388,7 +19388,7 @@ GameObject:
   - component: {fileID: 1519587363}
   m_Layer: 0
   m_Name: Lights
-  m_TagString: Untagged
+  m_TagString: BomberTruck
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19602,7 +19602,7 @@ GameObject:
   - component: {fileID: 1542880771}
   m_Layer: 0
   m_Name: canasta
-  m_TagString: Untagged
+  m_TagString: BasketBall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19822,7 +19822,7 @@ SphereCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1561596667}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 0.5
@@ -20053,7 +20053,7 @@ GameObject:
   - component: {fileID: 1580347258}
   m_Layer: 0
   m_Name: BlockWallSecondLayer (9)
-  m_TagString: Untagged
+  m_TagString: WallBlock
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20378,7 +20378,7 @@ GameObject:
   - component: {fileID: 1642929297}
   m_Layer: 0
   m_Name: BlocksWallSurface
-  m_TagString: Untagged
+  m_TagString: WallBlock
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20851,7 +20851,7 @@ GameObject:
   - component: {fileID: 1673169104}
   m_Layer: 0
   m_Name: Base (2)
-  m_TagString: BaseCubeWood
+  m_TagString: CubeWood
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20964,7 +20964,7 @@ GameObject:
   - component: {fileID: 1683152222}
   m_Layer: 0
   m_Name: Sphere (4)
-  m_TagString: Untagged
+  m_TagString: KeyVitrina
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21389,7 +21389,7 @@ GameObject:
   - component: {fileID: 1694511571}
   m_Layer: 0
   m_Name: Base (1)
-  m_TagString: BaseCubeWood
+  m_TagString: CubeWood
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21619,7 +21619,7 @@ GameObject:
   - component: {fileID: 1729136587}
   m_Layer: 0
   m_Name: BlockWallSecondLayer (5)
-  m_TagString: Untagged
+  m_TagString: WallBlock
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21733,7 +21733,7 @@ GameObject:
   - component: {fileID: 1755067303}
   m_Layer: 0
   m_Name: BlocksWall1firstLayer (3)
-  m_TagString: Untagged
+  m_TagString: WallBlock
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21868,13 +21868,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1760812432}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.9375348, y: 1.6015885, z: 3.0188155}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.9375348, y: 1.6015892, z: 3.0188198}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1777648220
 GameObject:
@@ -21945,7 +21945,7 @@ Transform:
   m_Children:
   - {fileID: 189486641}
   m_Father: {fileID: 0}
-  m_RootOrder: 17
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1800450585
 GameObject:
@@ -21962,7 +21962,7 @@ GameObject:
   - component: {fileID: 1800450590}
   m_Layer: 0
   m_Name: BlocksWall1firstLayer (1)
-  m_TagString: Untagged
+  m_TagString: WallBlock
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22271,9 +22271,9 @@ MonoBehaviour:
   groundLayer:
     serializedVersion: 2
     m_Bits: 64
-  gravity: -10
-  jumpHeight: 2
-  moveSpeed: 4
+  gravity: -20
+  jumpHeight: 0.2
+  moveSpeed: 8
 --- !u!114 &1803646649
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22307,8 +22307,9 @@ MonoBehaviour:
   playerTransform: {fileID: 1803646646}
   container: {fileID: 1561596668}
   pickUpRange: 0.65
-  dropForwardForce: 4
-  dropUpwardForce: 8
+  dropForwardForce: 0
+  dropUpwardForce: 0
+  throwForce: 8
   equipaded: 0
 --- !u!143 &1803646651
 CharacterController:
@@ -22327,7 +22328,7 @@ CharacterController:
   m_StepOffset: 0.3
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
-  m_Center: {x: 0, y: -0.02, z: 0}
+  m_Center: {x: 0, y: 0.19, z: 0}
 --- !u!1 &1812959050
 GameObject:
   m_ObjectHideFlags: 0
@@ -22343,7 +22344,7 @@ GameObject:
   - component: {fileID: 1812959055}
   m_Layer: 0
   m_Name: BlockWallSecondLayer (10)
-  m_TagString: Untagged
+  m_TagString: WallBlock
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22457,7 +22458,7 @@ GameObject:
   - component: {fileID: 1822147233}
   m_Layer: 0
   m_Name: BlockWallSecondLayer (13)
-  m_TagString: Untagged
+  m_TagString: WallBlock
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22782,7 +22783,7 @@ GameObject:
   - component: {fileID: 1855762740}
   m_Layer: 0
   m_Name: BlockWallSecondLayer
-  m_TagString: Untagged
+  m_TagString: WallBlock
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22896,7 +22897,7 @@ GameObject:
   - component: {fileID: 1861894255}
   m_Layer: 0
   m_Name: BlocksWall1firstLayer
-  m_TagString: Untagged
+  m_TagString: WallBlock
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -23009,7 +23010,7 @@ GameObject:
   - component: {fileID: 1866630000}
   m_Layer: 0
   m_Name: Cylinder
-  m_TagString: Untagged
+  m_TagString: KeyVitrina
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -23415,7 +23416,7 @@ GameObject:
   - component: {fileID: 1890002555}
   m_Layer: 0
   m_Name: Cylinder (2)
-  m_TagString: Untagged
+  m_TagString: KeyVitrina
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -23611,7 +23612,7 @@ GameObject:
   - component: {fileID: 1900954612}
   m_Layer: 0
   m_Name: BlocksWall1firstLayer (2)
-  m_TagString: Untagged
+  m_TagString: WallBlock
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -23875,7 +23876,7 @@ GameObject:
   - component: {fileID: 1950985006}
   m_Layer: 0
   m_Name: Sphere (2)
-  m_TagString: Untagged
+  m_TagString: KeyVitrina
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -23973,7 +23974,7 @@ GameObject:
   - component: {fileID: 1962930930}
   m_Layer: 0
   m_Name: BlockWallSecondLayer
-  m_TagString: Untagged
+  m_TagString: WallBlock
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -24184,7 +24185,7 @@ GameObject:
   - component: {fileID: 1983307013}
   m_Layer: 0
   m_Name: BlocksWall1firstLayer
-  m_TagString: Untagged
+  m_TagString: WallBlock
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -24298,7 +24299,7 @@ GameObject:
   - component: {fileID: 1999362525}
   m_Layer: 0
   m_Name: BlocksWallSurface
-  m_TagString: Untagged
+  m_TagString: WallBlock
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -24913,7 +24914,7 @@ GameObject:
   - component: {fileID: 2044529503}
   m_Layer: 0
   m_Name: Sphere
-  m_TagString: Untagged
+  m_TagString: KeyVitrina
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -25336,7 +25337,7 @@ GameObject:
   - component: {fileID: 2118795137}
   m_Layer: 0
   m_Name: CanastaBasketball (1)
-  m_TagString: Untagged
+  m_TagString: BasketBall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -25377,7 +25378,7 @@ GameObject:
   - component: {fileID: 2118917936}
   m_Layer: 0
   m_Name: BlocksWall1firstLayer
-  m_TagString: Untagged
+  m_TagString: WallBlock
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -25588,7 +25589,7 @@ GameObject:
   - component: {fileID: 2121945194}
   m_Layer: 0
   m_Name: BlockWallSecondLayer (1)
-  m_TagString: Untagged
+  m_TagString: WallBlock
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -25702,7 +25703,7 @@ GameObject:
   - component: {fileID: 2122118893}
   m_Layer: 0
   m_Name: BlocksWall1firstLayer (6)
-  m_TagString: Untagged
+  m_TagString: WallBlock
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -25929,7 +25930,7 @@ GameObject:
   - component: {fileID: 2127882252}
   m_Layer: 0
   m_Name: Cube
-  m_TagString: Untagged
+  m_TagString: KeyVitrina
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -26027,7 +26028,7 @@ GameObject:
   - component: {fileID: 2130019763}
   m_Layer: 0
   m_Name: BlocksWall1firstLayer
-  m_TagString: Untagged
+  m_TagString: WallBlock
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

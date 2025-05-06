@@ -2,8 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.InputSystem.XR;
 using UnityEngine.UIElements;
 using UnityEngine.Windows;
+using static MovePlayer;
 using static PlayerController;
 #region NOTAS Y PROPOSITOS
 // acomodar el codigo de Paola de clase en funciones y como yo programaria
@@ -33,10 +35,10 @@ public class PlayerController : MonoBehaviour {
         input = GetComponent<PlayerInputManager>();
         characterController = GetComponent<CharacterController>();
     }
-
-    // Update is called once per frame
     void Update() {
         MovePlayer();
+        JumpAndGravity();
+        ///*CamaraRotation*/();
     }
     void MovePlayer() {
         float speed = 0;
@@ -74,5 +76,26 @@ public class PlayerController : MonoBehaviour {
         Quaternion rotation = Quaternion.Euler(xRotation, yRotation, 0);
         cameraFollowTarget.rotation = Quaternion.identity;
     }
+    //public void OnTriggerEnter(Collider other) {
+    //    if (other.gameObject.CompareTag("Candado") && other.gameObject.CompareTag("KeyVitrina")) {
+    //    }
+    //}
+
+    //public void OnCollisionEnter(Collision collision) {
+    //    if (collision.gameObject.CompareTag("BowlBall") ||
+    //      collision.gameObject.CompareTag("BomberTruck") ||
+    //      collision.gameObject.CompareTag("BowlPine") ||
+    //      collision.gameObject.CompareTag("BasketBall") ||
+    //      collision.gameObject.CompareTag("CubeWood") ||
+    //      collision.gameObject.CompareTag("KeyVitrina")) {
+    //    }
+    //    if (collision.gameObject.CompareTag("BomberTruck") && collision.gameObject.CompareTag("WallBlock")) {
+    //        Destroy(collision.gameObject, 1.1f);
+    //    }
+    //    if (collision.gameObject.CompareTag("BaseCubeWood") && collision.gameObject.CompareTag("CubeWood")) {
+
+    //    }
+    //}
+
 }
 
