@@ -55409,9 +55409,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1803646646}
-  - component: {fileID: 1803646649}
-  - component: {fileID: 1803646650}
-  - component: {fileID: 1803646648}
   - component: {fileID: 1803646641}
   - component: {fileID: 1803646643}
   - component: {fileID: 1803646645}
@@ -55436,7 +55433,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Actions: {fileID: -944628639613478452, guid: f2ef131550d73ec45b0e0a7669056125, type: 3}
+  m_Actions: {fileID: -944628639613478452, guid: bdb3cab80432c71428d9ecb17be70d65, type: 3}
   m_NotificationBehavior: 0
   m_UIInputModule: {fileID: 0}
   m_DeviceLostEvent:
@@ -55451,7 +55448,7 @@ MonoBehaviour:
   m_ActionEvents:
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1803646649}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: PlayerController, Assembly-CSharp
         m_MethodName: 
         m_Mode: 0
@@ -55467,7 +55464,7 @@ MonoBehaviour:
     m_ActionName: Move/Move[/Keyboard/w,/Keyboard/s,/Keyboard/a,/Keyboard/d]
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1803646648}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: PlayerController, Assembly-CSharp
         m_MethodName: JumpPlayerDoll
         m_Mode: 0
@@ -55483,7 +55480,7 @@ MonoBehaviour:
     m_ActionName: Move/Jump[/Keyboard/space]
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1803646650}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: MovePlayer, Assembly-CSharp
         m_MethodName: 
         m_Mode: 0
@@ -55507,7 +55504,7 @@ MonoBehaviour:
     m_ActionName: Move/PickUp[/Keyboard/e]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
-  m_DefaultActionMap: Move
+  m_DefaultActionMap: Player
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 963194227}
 --- !u!136 &1803646643
@@ -55592,64 +55589,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 134.896, z: 0}
---- !u!114 &1803646648
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1803646640}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 35ec34e72200fec4dbe363cb92dd5a90, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cameraFollowTarget: {fileID: 1195883084}
-  playerVcam: {fileID: 963194225}
-  groundCheck: {fileID: 1064086312}
-  groundLayer:
-    serializedVersion: 2
-    m_Bits: 64
-  gravity: -20
-  jumpHeight: 0.2
-  moveSpeed: 8
---- !u!114 &1803646649
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1803646640}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 176c1bf91e03ae5439fa9244564b0d41, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  move: {x: 0, y: 0}
-  look: {x: 0, y: 0}
-  jump: 0
-  pickedUp: 0
---- !u!114 &1803646650
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1803646640}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dffa6e29c87ca2d4291b50d82038fe76, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemtRB: {fileID: 0}
-  itemCollider: {fileID: 0}
-  playerTransform: {fileID: 1803646646}
-  container: {fileID: 1561596668}
-  pickUpRange: 0.65
-  dropForwardForce: 0
-  dropUpwardForce: 0
-  throwForce: 8
-  equipaded: 0
 --- !u!143 &1803646651
 CharacterController:
   m_ObjectHideFlags: 0
