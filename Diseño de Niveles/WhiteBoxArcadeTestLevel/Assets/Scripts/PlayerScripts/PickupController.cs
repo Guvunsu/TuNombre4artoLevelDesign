@@ -36,7 +36,6 @@ public class PickupController : MonoBehaviour {
             Drop();
         }
     }
-
     private void PickUp() {
         equipped = true;
         slotFull = true;
@@ -50,7 +49,6 @@ public class PickupController : MonoBehaviour {
         itemRB.isKinematic = true;
         itemCollider.isTrigger = true;
     }
-
     private void Drop() {
         equipped = false;
         slotFull = false;
@@ -68,7 +66,6 @@ public class PickupController : MonoBehaviour {
             StartCoroutine(MoveForwardUntilCollision());
         }
     }
-
     IEnumerator MoveForwardUntilCollision() {
         float speed = 20f;
         while (true) {
@@ -76,7 +73,6 @@ public class PickupController : MonoBehaviour {
             yield return null;
         }
     }
-
     private void OnCollisionEnter(Collision collision) {
         if (CompareTag("BomberTruck") && collision.gameObject.CompareTag("WallBlock")) {
             Destroy(collision.gameObject);

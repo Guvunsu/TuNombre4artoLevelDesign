@@ -8,7 +8,7 @@ public class PlayerInputManager : MonoBehaviour {
     [Header("Inputs")]
     public Vector2 move;
     public Vector2 look;
-    //public bool pickedUp;
+    public bool pickedUp;
     public bool jumpValue;
     #endregion Variables
 
@@ -22,7 +22,7 @@ public class PlayerInputManager : MonoBehaviour {
         look = value.Get<Vector2>();
     }
     void OnPickUp(InputValue value) {
-        //pickedUp = value.Get<bool>();
+        pickedUp = value.Get<bool>();
     }
 
     void OnJump(InputValue value) {

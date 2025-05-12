@@ -62,17 +62,6 @@ public class PlayerController : MonoBehaviour
     }
     void JumpAndGravity()
     {
-        //isGrounded = Physics.CheckSphere(groundCheck.position, .2f, groundLayer);
-        //if (isGrounded) {
-        //    if (input.jump) {
-        //        velocity.y = Mathf.Sqrt(jumpHeight * 2 * -gravity);
-        //        input.jump = false;
-        //    } else {
-        //        velocity.y += gravity * Time.deltaTime;
-        //    }
-        //}
-        //characterController.Move(velocity * Time.deltaTime);
-
         velocity.y += gravity * Time.deltaTime;
         characterController.Move(velocity * Time.deltaTime);
 
