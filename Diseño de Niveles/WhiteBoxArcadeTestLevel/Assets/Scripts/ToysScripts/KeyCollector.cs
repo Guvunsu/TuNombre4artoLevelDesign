@@ -1,7 +1,7 @@
 using UnityEngine;
 
 public class KeyCollector : MonoBehaviour {
-    [SerializeField] private GameObject targetToUnlock; // Objeto cuyos BoxColliders quieres desactivar
+    [SerializeField] private GameObject targetToUnlock; 
 
     private void OnCollisionEnter(Collision other) {
         if (other.gameObject.CompareTag("Player"))

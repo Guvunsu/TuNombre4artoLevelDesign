@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 3088320028785514768}
   - component: {fileID: 3088320028785514775}
   - component: {fileID: 3088320028785514774}
+  - component: {fileID: 5422661965264900583}
   - component: {fileID: 9121400571424130266}
   m_Layer: 6
   m_Name: Balon (2)
@@ -115,6 +116,21 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &5422661965264900583
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3088320028785514772}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e861ab23a552041448f110e962a92713, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  throwBallForce: 8
+  basketBasketballGO: {fileID: 0}
+  basketBasketballTransform: {fileID: 0}
 --- !u!114 &9121400571424130266
 MonoBehaviour:
   m_ObjectHideFlags: 0

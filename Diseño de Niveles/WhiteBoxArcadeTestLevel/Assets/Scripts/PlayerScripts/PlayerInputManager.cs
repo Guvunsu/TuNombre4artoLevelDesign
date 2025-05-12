@@ -13,7 +13,6 @@ public class PlayerInputManager : MonoBehaviour {
     #endregion Variables
 
     #region PublicMethods
-    //Es como la Sliver Queen pero necesita uno de sus combos para ganar con ella, solo que esto ara que se mueva. P.D. recordatorio para alguien muy pacheco que te quiere <3
     //PlayerInput mediante "Send Messages"
     void OnMove(InputValue value) {
         move = value.Get<Vector2>();

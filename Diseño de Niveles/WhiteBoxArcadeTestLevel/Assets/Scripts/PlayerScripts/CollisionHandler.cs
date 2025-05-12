@@ -8,6 +8,7 @@ public class CollisionHandler : MonoBehaviour {
     [SerializeField] private float delayBeforeDeactivate;
 
     private void OnCollisionEnter(Collision collision) {
+
         if (collision.gameObject.CompareTag(targetTag)) {
             Debug.Log($"{gameObject.name} physically collided with {targetTag}. Waiting {delayBeforeDeactivate} sec to deactivate both.");
             StartCoroutine(DeactivateAfterDelay(collision.gameObject));

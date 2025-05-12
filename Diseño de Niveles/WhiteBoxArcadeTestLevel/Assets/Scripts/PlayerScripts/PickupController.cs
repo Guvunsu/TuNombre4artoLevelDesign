@@ -8,7 +8,6 @@ public class PickupController : MonoBehaviour
     [SerializeField] private Transform playerTransform;
     [SerializeField] private Transform container;
 
-    [SerializeField] private SO_InteractObjects interactObject;
     [SerializeField] private GameObject targetToDisableCollider;
     bool hasInteracted = false;
 

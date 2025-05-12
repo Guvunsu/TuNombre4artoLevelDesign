@@ -74,15 +74,14 @@ public class PlayerController : MonoBehaviour
             velocity.y = Mathf.Sqrt(jumpForce * -2f * gravity);
             jumpRequest = false;
         }
-
     }
-    void OnJump()
-    {
-        if (input.jumpValue && characterController.isGrounded)
-        {
-            jumpRequest = true;
-        }
-    }
+    //void OnJump()
+    //{
+    //    if (input.jumpValue && characterController.isGrounded)
+    //    {
+    //        jumpRequest = true;
+    //    }
+    //}
     private void CamaraRotation()
     {
         xRotation += input.look.y;

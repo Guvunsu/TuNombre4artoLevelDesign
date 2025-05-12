@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 7496894000291697463}
   - component: {fileID: 7496894000291697464}
   - component: {fileID: 4711878853021864373}
+  - component: {fileID: 4884104505714898464}
   m_Layer: 0
   m_Name: Balon (5)
   m_TagString: BasketBall
@@ -28,7 +29,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7496894000291697466}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.09757519, y: 0.023000002, z: -13.735433}
   m_LocalScale: {x: 0.15, y: 0.15, z: 0.15}
   m_ConstrainProportionsScale: 0
@@ -129,3 +130,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targetTag: Canasta
   delayBeforeDeactivate: 3
+--- !u!114 &4884104505714898464
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7496894000291697466}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e861ab23a552041448f110e962a92713, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  throwBallForce: 8
+  basketBasketballGO: {fileID: 0}
+  basketBasketballTransform: {fileID: 0}

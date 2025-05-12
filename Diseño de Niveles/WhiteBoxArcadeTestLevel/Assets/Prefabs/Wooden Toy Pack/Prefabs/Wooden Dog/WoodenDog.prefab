@@ -675,7 +675,8 @@ GameObject:
   - component: {fileID: 861547407971609206}
   - component: {fileID: 3427810136752427718}
   - component: {fileID: 3883080565407920589}
-  - component: {fileID: 1752725619}
+  - component: {fileID: 1631342681}
+  - component: {fileID: 933672199369262693}
   m_Layer: 6
   m_Name: WoodenDog
   m_TagString: BomberTruck
@@ -733,7 +734,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targetTag: WallBlock
   delayBeforeDeactivate: 2
---- !u!54 &1752725619
+--- !u!54 &1631342681
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -749,3 +750,17 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &933672199369262693
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7640794859089502171}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35d2f471e34bde04f8bd4c6a15f30811, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 20
+  BlockWallTransform: {fileID: 0}
