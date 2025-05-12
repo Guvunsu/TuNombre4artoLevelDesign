@@ -54550,8 +54550,6 @@ GameObject:
   - component: {fileID: 1803646646}
   - component: {fileID: 1803646655}
   - component: {fileID: 1803646654}
-  - component: {fileID: 1803646653}
-  - component: {fileID: 1803646652}
   - component: {fileID: 1803646641}
   - component: {fileID: 1803646643}
   - component: {fileID: 1803646645}
@@ -54750,36 +54748,6 @@ CharacterController:
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 0.19, z: 0}
---- !u!114 &1803646652
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1803646640}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 45c6c9cc084366e42bb0078a219b50eb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  playerTransform: {fileID: 1803646646}
-  interactRange: 2
-  interactObject: {fileID: 0}
-  targetToDisableCollider: {fileID: 931635154}
---- !u!114 &1803646653
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1803646640}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 731b2ad11f2559043baa0b2368dadd22, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  controller: {fileID: 1803646651}
-  gravity: -9.81
 --- !u!114 &1803646654
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -54792,6 +54760,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35ec34e72200fec4dbe363cb92dd5a90, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  characterController: {fileID: 1803646651}
   cameraFollowTarget: {fileID: 1195883084}
   playerVcam: {fileID: 1777648220}
   groundCheck: {fileID: 1064086312}

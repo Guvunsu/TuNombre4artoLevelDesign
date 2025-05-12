@@ -14,9 +14,10 @@ using static PlayerController;
 // arreglar el movimiento y experimentar
 #endregion NOTAS Y PROPOSITOS
 
-public class PlayerController : MonoBehaviour {
+public class PlayerController : MonoBehaviour
+{
     PlayerInputManager input;
-    CharacterController characterController;
+    [SerializeField] CharacterController characterController;
     [SerializeField] Transform cameraFollowTarget;
     [SerializeField] GameObject playerVcam;
 
@@ -32,22 +33,26 @@ public class PlayerController : MonoBehaviour {
     float yRotation;
     [SerializeField] private float moveSpeed;
 
-    void Start() {
+    void Start()
+    {
         input = GetComponent<PlayerInputManager>();
         characterController = GetComponent<CharacterController>();
     }
-    void Update() {
+    void Update()
+    {
         MovePlayer();
         JumpAndGravity();
         ///*CamaraRotation*/();
     }
-    void MovePlayer() {
+    void MovePlayer()
+    {
         float speed = 0;
         Vector3 moveInput = new Vector3(input.move.x, 0, input.move.y);
         Vector3 moveDirection = new Vector3(input.move.x, 0, input.move.y);
         float targetRotation = 0f;
         //Quaternion targetRotation = Quaternion.LookRotation(moveDirection);
-        if (input.move != Vector2.zero) {
+        if (input.move != Vector2.zero)
+        {
             speed = moveSpeed;
             targetRotation = Quaternion.LookRotation(moveInput).eulerAngles.y + playerVcam.transform.rotation.eulerAngles.y;
             Quaternion rotation = Quaternion.Euler(0, targetRotation, 0);
@@ -57,7 +62,8 @@ public class PlayerController : MonoBehaviour {
         Vector3 targetDurectioin = Quaternion.Euler(0, targetRotation, 0) * Vector3.forward;
         characterController.Move(targetDurectioin * speed * Time.deltaTime);
     }
-    void JumpAndGravity() {
+    void JumpAndGravity()
+    {
         //isGrounded = Physics.CheckSphere(groundCheck.position, .2f, groundLayer);
         //if (isGrounded) {
         //    if (input.jump) {
@@ -69,11 +75,13 @@ public class PlayerController : MonoBehaviour {
         //}
         //characterController.Move(velocity * Time.deltaTime);
 
-        if (characterController.isGrounded && velocity.y < 0) {
+        if (characterController.isGrounded && velocity.y < 0)
+        {
             velocity.y = -2f;
         }
 
-        if (jumpRequest && characterController.isGrounded) {
+        if (jumpRequest && characterController.isGrounded)
+        {
             velocity.y = Mathf.Sqrt(jumpForce * -2f * gravity);
             jumpRequest = false;
         }
@@ -81,13 +89,20 @@ public class PlayerController : MonoBehaviour {
         velocity.y += gravity * Time.deltaTime;
 
         characterController.Move(velocity * Time.deltaTime);
+        if (characterController.isGrounded && velocity.y < 0)
+        {
+            velocity.y = -2f;
+        }
     }
-    void OnJump() {
-        if (input.jumpValue && characterController.isGrounded) {
+    void OnJump()
+    {
+        if (input.jumpValue && characterController.isGrounded)
+        {
             jumpRequest = true;
         }
     }
-    private void CamaraRotation() {
+    private void CamaraRotation()
+    {
         xRotation += input.look.y;
         yRotation += input.look.x;
 

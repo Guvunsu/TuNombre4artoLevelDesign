@@ -6,6 +6,11 @@ public class PickupController : MonoBehaviour {
     [SerializeField] private Collider itemCollider;
     [SerializeField] private Transform playerTransform;
     [SerializeField] private Transform container;
+
+    [SerializeField] private SO_InteractObjects interactObject;
+    [SerializeField] private GameObject targetToDisableCollider;
+    bool hasInteracted = false;
+
     [SerializeField] private float pickUpRange = 3f;
     [SerializeField] private float throwForce = 5f;
 
@@ -19,6 +24,8 @@ public class PickupController : MonoBehaviour {
             GetComponent<Renderer>().material.color = Color.magenta;
 
             if (Input.GetKeyDown(KeyCode.E) && !slotFull) {
+                interactObject.Interact(this.gameObject, targetToDisableCollider);
+                hasInteracted = true;
                 PickUp();
             }
         } else if (!equipped) {
