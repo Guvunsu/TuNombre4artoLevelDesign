@@ -22,7 +22,7 @@ public class PlayerInputManager : MonoBehaviour {
         look = value.Get<Vector2>();
     }
     void OnPickUp(InputValue value) {
-        pickedUp = value.Get<bool>();
+        pickedUp = value.isPressed; //value.Get<bool>();
     }
 
     void OnJump(InputValue value) {

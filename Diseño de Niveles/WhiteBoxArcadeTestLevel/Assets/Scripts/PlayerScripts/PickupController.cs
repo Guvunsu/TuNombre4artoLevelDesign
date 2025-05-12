@@ -1,7 +1,8 @@
 using UnityEngine;
 using System.Collections;
 
-public class PickupController : MonoBehaviour {
+public class PickupController : MonoBehaviour
+{
     [SerializeField] private Rigidbody itemRB;
     [SerializeField] private Collider itemCollider;
     [SerializeField] private Transform playerTransform;
@@ -17,26 +18,48 @@ public class PickupController : MonoBehaviour {
     public static bool slotFull;
     private bool equipped;
 
-    void Update() {
+    void Update()
+    {
         Vector3 distanceToPlayer = playerTransform.position - transform.position;
-
-        if (!equipped && distanceToPlayer.magnitude <= pickUpRange) {
+        Debug.LogWarning("Update - Distance to player " + distanceToPlayer);
+        if (!equipped && distanceToPlayer.magnitude <= pickUpRange)
+        {
             GetComponent<Renderer>().material.color = Color.magenta;
-
-            if (Input.GetKeyDown(KeyCode.E) && !slotFull) {
-                interactObject.Interact(this.gameObject, targetToDisableCollider);
+            Debug.LogWarning("Not equipped and distance in pick up range");
+            if (Input.GetKeyDown(KeyCode.E) && !slotFull)
+            {
+                Debug.LogWarning("Pickup validated!!!!!");
+                Interact(this.gameObject, targetToDisableCollider);
                 hasInteracted = true;
                 PickUp();
             }
-        } else if (!equipped) {
+        }
+        else if (!equipped)
+        {
             GetComponent<Renderer>().material.color = Color.red;
         }
 
-        if (equipped && Input.GetKeyDown(KeyCode.Q)) {
+        if (equipped && Input.GetKeyDown(KeyCode.Q))
+        {
             Drop();
         }
     }
-    private void PickUp() {
+
+    public virtual void Interact(GameObject sourceObject, GameObject targetToDisableCollider)
+    {
+        if (sourceObject.CompareTag("KeyVitrina") && targetToDisableCollider != null)
+        {
+            Collider targetCollider = targetToDisableCollider.GetComponent<Collider>();
+            if (targetCollider != null)
+            {
+                targetCollider.enabled = false;
+                Debug.Log("¡Puerta/Vitrina desbloqueada!");
+            }
+        }
+    }
+
+    private void PickUp()
+    {
         equipped = true;
         slotFull = true;
         GetComponent<Renderer>().material.color = Color.white;
@@ -49,7 +72,8 @@ public class PickupController : MonoBehaviour {
         itemRB.isKinematic = true;
         itemCollider.isTrigger = true;
     }
-    private void Drop() {
+    private void Drop()
+    {
         equipped = false;
         slotFull = false;
 
@@ -57,31 +81,37 @@ public class PickupController : MonoBehaviour {
         itemRB.isKinematic = false;
         itemCollider.isTrigger = false;
 
-        if (CompareTag("BowlBall")) {
+        if (CompareTag("BowlBall"))
+        {
             Vector3 throwDirection = playerTransform.forward + Vector3.up * 0.5f;
             itemRB.AddForce(throwDirection * throwForce, ForceMode.Impulse);
         }
 
-        if (CompareTag("BomberTruck")) {
+        if (CompareTag("BomberTruck"))
+        {
             StartCoroutine(MoveForwardUntilCollision());
         }
     }
-    IEnumerator MoveForwardUntilCollision() {
+    IEnumerator MoveForwardUntilCollision()
+    {
         float speed = 20f;
-        while (true) {
+        while (true)
+        {
             transform.position += transform.forward * speed * Time.deltaTime;
             yield return null;
         }
     }
-    private void OnCollisionEnter(Collision collision) {
-        if (CompareTag("BomberTruck") && collision.gameObject.CompareTag("WallBlock")) {
+    private void OnCollisionEnter(Collision collision)
+    {//debugs :3
+        if (collision.gameObject.CompareTag("BomberTruck") ||
+            collision.gameObject.CompareTag("WallBlock") ||
+            collision.gameObject.CompareTag("BowlBall") ||
+            collision.gameObject.CompareTag("BowlPine"))
+        {// que avance el vechiculo y hacerle un scriipt para que avance y si toca el muro pasa una courutine y se desactivan o destruyen 
+            // la pelota hacerle un scriupt para darle addforce para cuando lo lance tengo un aventon y cuando toque los pinos pasen un tiempo y se destrueyn o se desactiven 
+            // cdebbugiar este codigo y probar cuiando hagarro cosas y suelto 
             Destroy(collision.gameObject);
-            Destroy(gameObject);
-        }
-
-        if (CompareTag("BowlBall") && collision.gameObject.CompareTag("BowlPine")) {
-            Destroy(collision.gameObject);
-            Destroy(gameObject);
+            //Destroy(gameObject);
         }
     }
 }
