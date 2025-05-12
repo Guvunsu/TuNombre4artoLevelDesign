@@ -8,8 +8,6 @@ using UnityEngine.Windows;
 
 using static PlayerController;
 #region NOTAS Y PROPOSITOS
-// acomodar el codigo de Paola de clase en funciones y como yo programaria
-//agregar un esatdo finito deñ juego para bloqeuar movimiento cuando pierdes y si estas vivo y no haz perdido sigues jugando
 // implementar el salto 
 // arreglar el movimiento y experimentar
 #endregion NOTAS Y PROPOSITOS
@@ -25,7 +23,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] LayerMask groundLayer;
     bool isGrounded;
     bool jumpRequest;
-    [SerializeField] float gravity = -10f;
+    [SerializeField] float gravity = -9.81f;
     [SerializeField] float jumpForce = 3f;
     Vector3 velocity;
 
@@ -75,24 +73,19 @@ public class PlayerController : MonoBehaviour
         //}
         //characterController.Move(velocity * Time.deltaTime);
 
+        velocity.y += gravity * Time.deltaTime;
+        characterController.Move(velocity * Time.deltaTime);
+
         if (characterController.isGrounded && velocity.y < 0)
         {
             velocity.y = -2f;
         }
-
         if (jumpRequest && characterController.isGrounded)
         {
             velocity.y = Mathf.Sqrt(jumpForce * -2f * gravity);
             jumpRequest = false;
         }
 
-        velocity.y += gravity * Time.deltaTime;
-
-        characterController.Move(velocity * Time.deltaTime);
-        if (characterController.isGrounded && velocity.y < 0)
-        {
-            velocity.y = -2f;
-        }
     }
     void OnJump()
     {
@@ -110,26 +103,4 @@ public class PlayerController : MonoBehaviour
         Quaternion rotation = Quaternion.Euler(xRotation, yRotation, 0);
         cameraFollowTarget.rotation = rotation;
     }
-    //public void OnTriggerEnter(Collider other) {
-    //    if (other.gameObject.CompareTag("Candado") && other.gameObject.CompareTag("KeyVitrina")) {
-    //    }
-    //}
-
-    //public void OnCollisionEnter(Collision collision) {
-    //    if (collision.gameObject.CompareTag("BowlBall") ||
-    //      collision.gameObject.CompareTag("BomberTruck") ||
-    //      collision.gameObject.CompareTag("BowlPine") ||
-    //      collision.gameObject.CompareTag("BasketBall") ||
-    //      collision.gameObject.CompareTag("CubeWood") ||
-    //      collision.gameObject.CompareTag("KeyVitrina")) {
-    //    }
-    //    if (collision.gameObject.CompareTag("BomberTruck") && collision.gameObject.CompareTag("WallBlock")) {
-    //        Destroy(collision.gameObject, 1.1f);
-    //    }
-    //    if (collision.gameObject.CompareTag("BaseCubeWood") && collision.gameObject.CompareTag("CubeWood")) {
-
-    //    }
-    //}
-
 }
-
