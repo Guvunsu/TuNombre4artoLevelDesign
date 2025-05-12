@@ -1,31 +1,27 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class InteractController : MonoBehaviour {
     [SerializeField] private Transform playerTransform;
-    [SerializeField] private float intereactRange;
+    [SerializeField] private float interactRange = 2f;
+    [SerializeField] private SO_InteractObjects interactObject;
+    [SerializeField] private GameObject targetToDisableCollider; // objeto como "Vitrina", "Puerta", etc.
 
-    public static bool _interacted;
-    public bool _interact;
+    private bool hasInteracted = false;
 
-    [SerializeField] SO_InteractObjects interactObjects;
+    void Update() {
+        if (hasInteracted) return;
 
-    #region RunTimeVariables
-    Vector3 distanceToPlayer;
-    #endregion
-    private void Update() {
-        distanceToPlayer = playerTransform.position - transform.position;
-        if (!_interact && distanceToPlayer.magnitude <= intereactRange) {
-            gameObject.GetComponent<Renderer>().material.color = Color.green;
-            if (Input.GetKeyDown(KeyCode.E) && !_interacted) {
-                interactObjects.Interact(gameObject);
-                _interact = true;
-                _interacted = true;
+        Vector3 distance = playerTransform.position - transform.position;
+
+        if (distance.magnitude <= interactRange) {
+            GetComponent<Renderer>().material.color = Color.green;
+
+            if (Input.GetKeyDown(KeyCode.E)) {
+                interactObject.Interact(this.gameObject, targetToDisableCollider);
+                hasInteracted = true;
             }
         } else {
-            gameObject.GetComponent<Renderer>().material.color = Color.white;
+            GetComponent<Renderer>().material.color = Color.white;
         }
     }
-
 }

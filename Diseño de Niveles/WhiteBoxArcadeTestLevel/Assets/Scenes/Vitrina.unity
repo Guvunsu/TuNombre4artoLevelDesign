@@ -54763,9 +54763,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerTransform: {fileID: 1803646646}
-  intereactRange: 3.33
-  _interact: 1
-  interactObjects: {fileID: 0}
+  interactRange: 2
+  interactObject: {fileID: 0}
+  targetToDisableCollider: {fileID: 931635154}
 --- !u!114 &1803646653
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -2,22 +2,13 @@ using UnityEngine;
 
 [CreateAssetMenu(fileName = "NewInteractObject", menuName = "Interact/InteractObject")]
 public class SO_InteractObjects : ScriptableObject {
-    public void Interact(GameObject targetObject) {
-        Debug.Log("Interacted with ScriptableObject!");
-        // Aquí va la lógica de interacción
-        if (targetObject.CompareTag("BowlBall") && targetObject.CompareTag("BowlPine")) {
-
+    public virtual void Interact(GameObject sourceObject, GameObject targetToDisableCollider) {
+        if (sourceObject.CompareTag("KeyVitrina") && targetToDisableCollider != null) {
+            Collider targetCollider = targetToDisableCollider.GetComponent<Collider>();
+            if (targetCollider != null) {
+                targetCollider.enabled = false;
+                Debug.Log("¡Puerta/Vitrina desbloqueada!");
+            }
         }
-        if (targetObject.CompareTag("WallBlock") && targetObject.CompareTag("BomberTruck")) {
-
-        }
-        if (targetObject.CompareTag("BasketBall") && targetObject.CompareTag("Canasta")) {
-
-        }
-        if (targetObject.CompareTag("KeyVitrina")) {
-
-        }
-
     }
 }
-

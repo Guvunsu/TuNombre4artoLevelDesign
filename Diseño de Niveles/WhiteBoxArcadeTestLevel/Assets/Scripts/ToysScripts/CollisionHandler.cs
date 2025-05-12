@@ -5,12 +5,12 @@ using UnityEngine;
 public class CollisionHandler : MonoBehaviour {
 
     [SerializeField] private string targetTag;
-    [SerializeField] private float delayBeforeDeactivate = 1f;
+    [SerializeField] private float delayBeforeDeactivate;
 
-    private void OnTriggerEnter(Collider other) {
-        if (other.CompareTag(targetTag)) {
-            Debug.Log($"{gameObject.name} touched {targetTag}. Waiting {delayBeforeDeactivate} sec to deactivate both.");
-            StartCoroutine(DeactivateAfterDelay(other.gameObject));
+    private void OnCollisionEnter(Collision collision) {
+        if (collision.gameObject.CompareTag(targetTag)) {
+            Debug.Log($"{gameObject.name} physically collided with {targetTag}. Waiting {delayBeforeDeactivate} sec to deactivate both.");
+            StartCoroutine(DeactivateAfterDelay(collision.gameObject));
         }
     }
 

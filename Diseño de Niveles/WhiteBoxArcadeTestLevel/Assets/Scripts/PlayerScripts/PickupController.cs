@@ -1,114 +1,84 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-//implementar el new sistem script_PlayerInputManager en las mecanicas de este script
-// acomodar el codigo como yo programo
-// implementar mis Collsisions y triggers de mi nivel para interactuar con los objetos 
-
-// arreglar el bug de tomar algo, teletransportarse y perder creo yo por un momento los colliders (corregido)
+using System.Collections;
 
 public class PickupController : MonoBehaviour {
-    [SerializeField] private Rigidbody itemtRB;
+    [SerializeField] private Rigidbody itemRB;
     [SerializeField] private Collider itemCollider;
     [SerializeField] private Transform playerTransform;
     [SerializeField] private Transform container;
-    [SerializeField] private float pickUpRange;
-    [SerializeField] private float dropForwardForce;
-    [SerializeField] private float dropUpwardForce;
-    [SerializeField] private float throwForce;
+    [SerializeField] private float pickUpRange = 3f;
+    [SerializeField] private float throwForce = 5f;
+
     public static bool slotFull;
-    public bool equipaded;
-    // Start is called before the first frame update
-    void Start() {
-        if (!equipaded) {
-            itemtRB.isKinematic = true;
-            itemCollider.isTrigger = false;
+    private bool equipped;
 
-        } else {
-            itemtRB.isKinematic = true;
-            itemCollider.isTrigger = true;
-            slotFull = true;
-        }
-
-    }
-
-    // Update is called once per frame
     void Update() {
-        Vector3 distamceToPlayer = transform.position - transform.position;
-        if (!equipaded && distamceToPlayer.magnitude <= pickUpRange) {
-            gameObject.GetComponent<Renderer>().material.color = Color.magenta;
+        Vector3 distanceToPlayer = playerTransform.position - transform.position;
+
+        if (!equipped && distanceToPlayer.magnitude <= pickUpRange) {
+            GetComponent<Renderer>().material.color = Color.magenta;
+
             if (Input.GetKeyDown(KeyCode.E) && !slotFull) {
                 PickUp();
             }
-        } else {
-            gameObject.GetComponent<Renderer>().material.color = Color.red;
+        } else if (!equipped) {
+            GetComponent<Renderer>().material.color = Color.red;
         }
-        if (equipaded && Input.GetKeyDown(KeyCode.Q)) {
+
+        if (equipped && Input.GetKeyDown(KeyCode.Q)) {
             Drop();
         }
-
     }
 
-    #region Take&DropItems
     private void PickUp() {
-        equipaded = true;
+        equipped = true;
         slotFull = true;
-        gameObject.GetComponent<Renderer>().material.color = Color.white;
+        GetComponent<Renderer>().material.color = Color.white;
 
-        //make weapon a child of the player
         transform.SetParent(container);
         transform.localPosition = Vector3.zero;
-        transform.localRotation = Quaternion.Euler(Vector3.zero);
+        transform.localRotation = Quaternion.identity;
         transform.localScale = Vector3.one;
 
-        // make rb kinematic and boxcollider a trigger
-        itemtRB.isKinematic = true;
+        itemRB.isKinematic = true;
         itemCollider.isTrigger = true;
     }
 
     private void Drop() {
-        equipaded = false;
+        equipped = false;
         slotFull = false;
 
-        //set parent to null
         transform.SetParent(null);
-
-        // make rb not kinematic and boxcollider normal
-        itemtRB.isKinematic = false;
+        itemRB.isKinematic = false;
         itemCollider.isTrigger = false;
 
-        //add random rotation
-        float random = Random.Range(-4f, 1f);
-        itemtRB.AddTorque(new Vector3(random, random, random) * 10);
-
-        if (gameObject.CompareTag("BowlBall")) {
+        if (CompareTag("BowlBall")) {
             Vector3 throwDirection = playerTransform.forward + Vector3.up * 0.5f;
-            GetComponent<Rigidbody>().isKinematic = false;
-            GetComponent<Rigidbody>().AddForce(throwDirection * throwForce, ForceMode.Impulse);
+            itemRB.AddForce(throwDirection * throwForce, ForceMode.Impulse);
         }
-        if (gameObject.CompareTag("BomberTruck")) {
+
+        if (CompareTag("BomberTruck")) {
             StartCoroutine(MoveForwardUntilCollision());
         }
     }
 
     IEnumerator MoveForwardUntilCollision() {
-        float moveSpeed = 20f;
+        float speed = 20f;
         while (true) {
-            transform.position += transform.forward * moveSpeed * Time.deltaTime;
+            transform.position += transform.forward * speed * Time.deltaTime;
             yield return null;
         }
     }
-    #endregion Take&DropItems
 
-    void OnCollisionEnter(Collision collision) {
-        if (gameObject.CompareTag("BomberTruck") && collision.gameObject.CompareTag("WallBlock")) {
+    private void OnCollisionEnter(Collision collision) {
+        if (CompareTag("BomberTruck") && collision.gameObject.CompareTag("WallBlock")) {
             Destroy(collision.gameObject);
-            Destroy(this.gameObject);
+            Destroy(gameObject);
         }
-        if (gameObject.CompareTag("BowlBall") && collision.gameObject.CompareTag("BowlPine")) {
+
+        if (CompareTag("BowlBall") && collision.gameObject.CompareTag("BowlPine")) {
             Destroy(collision.gameObject);
-            Destroy(this.gameObject);
+            Destroy(gameObject);
         }
     }
 }
-
