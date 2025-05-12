@@ -25,7 +25,6 @@ public class PlayerController : MonoBehaviour {
     bool isGrounded;
     bool jumpRequest;
     [SerializeField] float gravity = -10f;
-    [SerializeField] float jumpHeight = 2f;
     [SerializeField] float jumpForce = 3f;
     Vector3 velocity;
 

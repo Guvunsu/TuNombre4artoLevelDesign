@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 6302760083385004049}
   - component: {fileID: 6302760083385004054}
   - component: {fileID: 6302760083385004055}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cylinder (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -110,7 +110,7 @@ GameObject:
   - component: {fileID: 6302760083461694351}
   - component: {fileID: 6302760083461694348}
   - component: {fileID: 6302760083461694349}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Sphere (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -207,7 +207,7 @@ GameObject:
   - component: {fileID: 6302760083571625284}
   - component: {fileID: 6302760083571625285}
   - component: {fileID: 6302760083571625290}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Sphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -304,7 +304,7 @@ GameObject:
   - component: {fileID: 6302760083838197040}
   - component: {fileID: 6302760083838197041}
   - component: {fileID: 6302760083838197046}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cylinder (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -402,7 +402,7 @@ GameObject:
   - component: {fileID: 6302760084151341405}
   - component: {fileID: 6302760084151341378}
   - component: {fileID: 6302760084151341379}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Sphere (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -499,7 +499,7 @@ GameObject:
   - component: {fileID: 6302760084652621884}
   - component: {fileID: 6302760084652621885}
   - component: {fileID: 6302760084652621858}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Sphere (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -596,7 +596,7 @@ GameObject:
   - component: {fileID: 6302760084866646167}
   - component: {fileID: 6302760084866646164}
   - component: {fileID: 6302760084866646165}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Sphere (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -693,7 +693,7 @@ GameObject:
   - component: {fileID: 6302760085031113086}
   - component: {fileID: 6302760085031113087}
   - component: {fileID: 6302760085031113084}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cylinder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -791,7 +791,7 @@ GameObject:
   - component: {fileID: 6302760085289455753}
   - component: {fileID: 6302760085289455758}
   - component: {fileID: 6302760085289455759}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -885,8 +885,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6302760085432225237}
+  - component: {fileID: 192863503543121516}
   - component: {fileID: 6302760085432225236}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: LLave
   m_TagString: KeyVitrina
   m_Icon: {fileID: 0}
@@ -900,7 +901,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6302760085432225242}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 1.9417611, y: -0.47740233, z: 2.483148}
   m_LocalScale: {x: 0.31735384, y: 0.31735384, z: 0.31735387}
   m_ConstrainProportionsScale: 0
@@ -917,6 +918,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &192863503543121516
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6302760085432225242}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d83e4942b046e5343b18d9089d48718a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetToUnlock: {fileID: 0}
 --- !u!54 &6302760085432225236
 Rigidbody:
   m_ObjectHideFlags: 0

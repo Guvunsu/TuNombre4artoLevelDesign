@@ -13,9 +13,10 @@ GameObject:
   - component: {fileID: 6098358725185376706}
   - component: {fileID: 6098358725185376705}
   - component: {fileID: 6098358725185376704}
-  m_Layer: 0
+  - component: {fileID: 5431529106950658556}
+  m_Layer: 6
   m_Name: BowlBall (2)
-  m_TagString: BowlPine
+  m_TagString: BowlBall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -27,9 +28,9 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6098358725185376710}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 1.1289213, y: -0.066750154, z: 7.01964}
-  m_LocalScale: {x: 0.35204372, y: 0.3982231, z: 0.35584435}
+  m_LocalScale: {x: 0.4842724, y: 0.48427233, z: 0.4842724}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -114,3 +115,17 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &5431529106950658556
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6098358725185376710}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e91de0e1c37fff418c3ff3597f1c1b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetTag: BowlPine
+  delayBeforeDeactivate: 1

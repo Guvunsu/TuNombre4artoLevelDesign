@@ -2,8 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class InteractController : MonoBehaviour
-{
+public class InteractController : MonoBehaviour {
     [SerializeField] private Transform playerTransform;
     [SerializeField] private float intereactRange;
 
@@ -15,21 +14,16 @@ public class InteractController : MonoBehaviour
     #region RunTimeVariables
     Vector3 distanceToPlayer;
     #endregion
-    private void Update()
-    {
+    private void Update() {
         distanceToPlayer = playerTransform.position - transform.position;
-        if (!_interact && distanceToPlayer.magnitude <= intereactRange)
-        {
+        if (!_interact && distanceToPlayer.magnitude <= intereactRange) {
             gameObject.GetComponent<Renderer>().material.color = Color.green;
-            if (Input.GetKeyDown(KeyCode.E) && !_interacted)
-            {
-                interactObjects.Interact();
+            if (Input.GetKeyDown(KeyCode.E) && !_interacted) {
+                interactObjects.Interact(gameObject);
                 _interact = true;
                 _interacted = true;
             }
-        }
-        else
-        {
+        } else {
             gameObject.GetComponent<Renderer>().material.color = Color.white;
         }
     }
