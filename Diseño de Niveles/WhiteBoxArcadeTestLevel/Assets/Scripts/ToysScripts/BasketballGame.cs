@@ -37,7 +37,7 @@ public class BasketballGame : MonoBehaviour {
 
     #region CollisionDestroy
     private void OnCollisionEnter(Collision collision) {
-        if (collision.gameObject.CompareTag("Basket")) {
+        if (collision.gameObject.CompareTag("Canasta")) {
             Debug.Log("¡Anotaste!");
             StartCoroutine(DestroyAfterSeconds(2f));
         } else if (collision.gameObject.CompareTag("Ground")) {

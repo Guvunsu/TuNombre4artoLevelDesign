@@ -21,6 +21,7 @@ public class PickupController : MonoBehaviour {
 
     public static bool slotFull;
     private bool equipped;
+    Vector3 originalScale;
 
     void Update() {
         Vector3 distanceToPlayer = playerTransform.position - transform.position;
@@ -52,19 +53,18 @@ public class PickupController : MonoBehaviour {
             }
         }
     }
-
     private void PickUp() {
         equipped = true;
         slotFull = true;
         GetComponent<Renderer>().material.color = Color.white;
 
+        //itemRB.isKinematic = true;
+        //itemCollider.isTrigger = true;
+
         transform.SetParent(container);
         transform.localPosition = Vector3.zero;
         transform.localRotation = Quaternion.identity;
-        transform.localScale = Vector3.one;
-
-        itemRB.isKinematic = true;
-        itemCollider.isTrigger = true;
+        transform.localScale = originalScale;
     }
     private void Drop() {
         equipped = false;
@@ -76,27 +76,16 @@ public class PickupController : MonoBehaviour {
 
         if (CompareTag("BowlBall")) {
             scrip_bowlingBallForce.MovBowlingBallForwardInteract();
-            Vector3 throwDirection = playerTransform.forward + Vector3.up * 0.5f;
-            itemRB.AddForce(throwDirection * throwForce, ForceMode.Impulse);
         }
         if (CompareTag("BomberTruck")) {
             script_BomberTruckMovingForward.MoveCarForwarWithInteract();
-            StartCoroutine(MoveForwardUntilCollision());
         }
-        if (CompareTag("BallBasketball")) {
+        if (CompareTag("Basketball")) {
             script_BasketballGame.ThrownBallBasketball();
-            StartCoroutine(MoveForwardUntilCollision());
-        }
-    }
-    IEnumerator MoveForwardUntilCollision() {
-        float speed = 20f;
-        while (true) {
-            transform.position += transform.forward * speed * Time.deltaTime;
-            yield return null;
         }
     }
     private void OnCollisionEnter(Collision collision) {
-        if (collision.gameObject.CompareTag("Player")) {
+        if (collision.gameObject.CompareTag("KeyVitrina")) {
             Debug.Log("Obtuve la llave y ahorra el box collider de la vitrina del centro se desactivo");
             foreach (BoxCollider bc in targetToUnlock.GetComponentsInChildren<BoxCollider>()) {
                 bc.enabled = false;
