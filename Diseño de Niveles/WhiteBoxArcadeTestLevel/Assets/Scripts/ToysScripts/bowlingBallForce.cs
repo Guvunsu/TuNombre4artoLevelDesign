@@ -13,6 +13,9 @@ public class bowlingBallForce : MonoBehaviour {
     Rigidbody bowlingBallRB;
 
     void Update() {
+        MovBowlingBallForwardInteract();
+    }
+    public void MovBowlingBallForwardInteract() {
         if (Input.GetKeyDown(KeyCode.E)) {
             bowlingBallRB = GetComponent<Rigidbody>();
             Debug.Log("ejecuto E para EL BOLICHE");
@@ -24,10 +27,10 @@ public class bowlingBallForce : MonoBehaviour {
             }
         }
     }
-
     public void OnCollisionEnter(Collision collision) {
         if (collision.gameObject.CompareTag("BowlingBall")) {
             iTouchedPines = true;
+            MovBowlingBallForwardInteract();
             Destroy(collision.gameObject, 5f);
         }
     }

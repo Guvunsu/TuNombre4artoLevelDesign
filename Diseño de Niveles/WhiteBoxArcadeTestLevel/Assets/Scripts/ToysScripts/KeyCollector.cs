@@ -10,7 +10,6 @@ public class KeyCollector : MonoBehaviour {
             foreach (BoxCollider bc in targetToUnlock.GetComponentsInChildren<BoxCollider>()) {
                 bc.enabled = false;
             }
-            // Desactiva la llave
             gameObject.SetActive(false);
         }
     }

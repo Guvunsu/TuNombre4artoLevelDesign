@@ -14,6 +14,9 @@ public class BomberTruckMovingForward : MonoBehaviour {
     GameObject bomberTruckGO;
     Rigidbody bomberTruckRB;
     void Update() {
+        MoveCarForwarWithInteract();
+    }
+    public void MoveCarForwarWithInteract() {
         if (isNearMyBomberTruckOrMyDoggie && Input.GetKeyDown(KeyCode.E)) {
             Debug.Log("ejecuto E para LOS VEHICULOS");
             if (bomberTruckRB != null) {
@@ -28,6 +31,7 @@ public class BomberTruckMovingForward : MonoBehaviour {
         if (collision.gameObject.CompareTag("BomberTruck")) {
             isNearMyBomberTruckOrMyDoggie = true;
             bomberTruckGO = collision.gameObject;
+            MoveCarForwarWithInteract();
             bomberTruckRB = bomberTruckGO.GetComponent<Rigidbody>();
             Debug.Log("estoy cerca del BomberTruck y listo para moverlo.");
         }

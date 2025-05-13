@@ -18,6 +18,9 @@ public class BasketballGame : MonoBehaviour {
         ballBasketballRB = GetComponent<Rigidbody>();
     }
     void Update() {
+        ThrownBallBasketball();
+    }
+    public void ThrownBallBasketball() {
         if (!hasBeenThrown && Input.GetKeyDown(KeyCode.E)) {
             Debug.Log("aprete E para BASKETABALL pelota");
             if (ballBasketballRB != null) {
