@@ -40,7 +40,7 @@ public class PlayerController : MonoBehaviour
     {
         MovePlayer();
         JumpAndGravity();
-        ///*CamaraRotation*/();
+        CamaraRotation();
     }
     void MovePlayer()
     {
@@ -75,13 +75,11 @@ public class PlayerController : MonoBehaviour
             jumpRequest = false;
         }
     }
-    //void OnJump()
-    //{
-    //    if (input.jumpValue && characterController.isGrounded)
-    //    {
-    //        jumpRequest = true;
-    //    }
-    //}
+    void OnJump() {
+        if (input.jumpValue && characterController.isGrounded) {
+            jumpRequest = true;
+        }
+    }
     private void CamaraRotation()
     {
         xRotation += input.look.y;

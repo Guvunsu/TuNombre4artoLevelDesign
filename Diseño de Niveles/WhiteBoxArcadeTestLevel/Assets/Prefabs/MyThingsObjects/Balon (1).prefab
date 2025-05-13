@@ -143,5 +143,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   throwBallForce: 8
-  basketBasketballGO: {fileID: 0}
-  basketBasketballTransform: {fileID: 0}
+  basketBasketballGO: {fileID: 299054094425755323, guid: 16a5c50a7e4094e4e8a3f05d89e95545, type: 3}
+  basketBasketballTransform: {fileID: 299054094425755322, guid: 16a5c50a7e4094e4e8a3f05d89e95545, type: 3}
