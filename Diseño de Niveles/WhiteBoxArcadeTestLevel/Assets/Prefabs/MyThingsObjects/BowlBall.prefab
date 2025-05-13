@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3952316097403168566}
   - component: {fileID: 3952316097403168562}
+  - component: {fileID: 7008796532859757159}
   - component: {fileID: 3952316097403168563}
   - component: {fileID: 3952316097403168564}
   - component: {fileID: 3952316097403168565}
@@ -44,6 +45,20 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3952316097403168567}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &7008796532859757159
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3952316097403168567}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d577a6b836df34146bf60824565caa38, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 10
+  bowlingPines: {fileID: 0}
 --- !u!23 &3952316097403168563
 MeshRenderer:
   m_ObjectHideFlags: 0

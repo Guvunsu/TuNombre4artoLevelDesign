@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class KeyOpenShowCase : MonoBehaviour {
     #region Variables
-    [SerializeField] private GameObject targetToUnlock;
+    [SerializeField] private BoxCollider targetToUnlock;
 
     #endregion Variables
 

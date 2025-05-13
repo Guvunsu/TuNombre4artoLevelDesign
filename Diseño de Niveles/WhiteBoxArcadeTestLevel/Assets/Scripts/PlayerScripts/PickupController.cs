@@ -24,24 +24,24 @@ public class PickupController : MonoBehaviour {
     Vector3 originalScale;
 
     void Update() {
-        Vector3 distanceToPlayer = playerTransform.position - transform.position;
-        Debug.LogWarning("Update - Distance to player " + distanceToPlayer);
-        if (!equipped && distanceToPlayer.magnitude <= pickUpRange) {
-            GetComponent<Renderer>().material.color = Color.magenta;
-            Debug.LogWarning("Not equipped and distance in pick up range");
-            if (Input.GetKeyDown(KeyCode.E) && !slotFull) {
-                Debug.LogWarning("Pickup validated!!!!!");
-                Interact(this.gameObject, targetToDisableCollider);
-                hasInteracted = true;
-                PickUp();
-            }
-        } else if (!equipped) {
-            GetComponent<Renderer>().material.color = Color.red;
-        }
+        //Vector3 distanceToPlayer = playerTransform.position - transform.position;
+        //Debug.LogWarning("Update - Distance to player " + distanceToPlayer);
+        //if (!equipped && distanceToPlayer.magnitude <= pickUpRange) {
+        //    GetComponent<Renderer>().material.color = Color.magenta;
+        //    Debug.LogWarning("Not equipped and distance in pick up range");
+        //    if (Input.GetKeyDown(KeyCode.E) && !slotFull) {
+        //        Debug.LogWarning("Pickup validated!!!!!");
+        //        Interact(this.gameObject, targetToDisableCollider);
+        //        hasInteracted = true;
+        //        PickUp();
+        //    }
+        //} else if (!equipped) {
+        //    GetComponent<Renderer>().material.color = Color.red;
+        //}
 
-        if (equipped && Input.GetKeyDown(KeyCode.Q)) {
-            Drop();
-        }
+        //if (equipped && Input.GetKeyDown(KeyCode.Q)) {
+        //    Drop();
+        //}
     }
 
     public virtual void Interact(GameObject sourceObject, GameObject targetToDisableCollider) {
