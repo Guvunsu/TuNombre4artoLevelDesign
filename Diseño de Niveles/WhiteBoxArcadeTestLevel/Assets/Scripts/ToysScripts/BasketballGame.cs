@@ -3,41 +3,51 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class BasketballGame : MonoBehaviour {
+    #region Variables
     [SerializeField] float throwBallForce;
 
-    [SerializeField] GameObject basketBasketballGO;
     [SerializeField] Transform basketBasketballTransform;
-    GameObject ballBasketballGO;
-    Rigidbody ballBasketballRB;
 
-    Vector3 direction;
-    bool point = false;
+    Rigidbody ballBasketballRB;
     bool hasBeenThrown = false;
 
+    [SerializeField] GameObject basketBasketballGO;
+    Vector3 direction;
+    #endregion Variables
+
+    #region PublicMethods
     void Start() {
         ballBasketballRB = GetComponent<Rigidbody>();
     }
     void Update() {
-        ThrownBallBasketball();
+        if (!hasBeenThrown && Input.GetKeyDown(KeyCode.E))
+            ThrownBallBasketball();
     }
+    #endregion PublicMethods
+
+    #region ThrownBall
     public void ThrownBallBasketball() {
-        if (!hasBeenThrown && Input.GetKeyDown(KeyCode.E)) {
-            Debug.Log("aprete E para BASKETABALL pelota");
-            if (ballBasketballRB != null) {
-                direction = (basketBasketballTransform.position - transform.position).normalized + Vector3.up * 0.666f;
-                ballBasketballRB.AddForce(direction * throwBallForce * Time.deltaTime, ForceMode.Impulse);
-                hasBeenThrown = true;
-                Debug.Log("Lance la pelota");
-            }
-        }
+        direction = (basketBasketballTransform.position - transform.position).normalized + Vector3.up * 0.666f;
+        ballBasketballRB.AddForce(direction * throwBallForce * Time.deltaTime, ForceMode.Impulse);
+        hasBeenThrown = true;
+        Debug.Log("Lance la pelota");
     }
+
+    #endregion ThrownBall
+
+    #region CollisionDestroy
     private void OnCollisionEnter(Collision collision) {
         if (collision.gameObject.CompareTag("Basket")) {
-            point = true;
             Debug.Log("¡Anotaste!");
+            StartCoroutine(DestroyAfterSeconds(2f));
         } else if (collision.gameObject.CompareTag("Ground")) {
             hasBeenThrown = false;
             Debug.Log("Fallaste, puedes lanzar de nuevo");
         }
     }
+    IEnumerator DestroyAfterSeconds(float seconds) {
+        yield return new WaitForSeconds(seconds);
+        Destroy(gameObject);
+    }
+    #endregion  CollisionDestroy
 }
