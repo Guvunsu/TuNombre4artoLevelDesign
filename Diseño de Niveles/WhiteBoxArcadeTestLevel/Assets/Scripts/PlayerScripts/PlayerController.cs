@@ -20,7 +20,7 @@ public class PlayerController : MonoBehaviour {
     [SerializeField] float gravity = -9.81f;
     [SerializeField] float jumpForce = 3f;
     Vector3 velocity;
- 
+
     float xRotation;
     float yRotation;
     [SerializeField] private float moveSpeed;
@@ -43,7 +43,7 @@ public class PlayerController : MonoBehaviour {
     #region Movement
     void MovePlayer() {
         float speed = 0;
-        Vector3 moveInput = new Vector3(input.move.x, 0, input.move.y);
+        Vector3 moveInput = new Vector3(input.move.x, 0, input.move.y); // probar al rato si poneindolo Space.World o Self arregle el bug de andar 
         Vector3 moveDirection = new Vector3(input.move.x, 0, input.move.y);
         float targetRotation = 0f;
         if (input.move != Vector2.zero) {

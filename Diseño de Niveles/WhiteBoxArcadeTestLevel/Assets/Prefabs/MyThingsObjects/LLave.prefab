@@ -885,8 +885,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6302760085432225237}
-  - component: {fileID: 192863503543121516}
   - component: {fileID: 8195225208627765787}
+  - component: {fileID: 8363019899142449633}
   - component: {fileID: 6302760085432225236}
   m_Layer: 6
   m_Name: LLave
@@ -919,19 +919,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &192863503543121516
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6302760085432225242}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d83e4942b046e5343b18d9089d48718a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  targetToUnlock: {fileID: 0}
 --- !u!114 &8195225208627765787
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -945,6 +932,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetToUnlock: {fileID: 0}
+--- !u!114 &8363019899142449633
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6302760085432225242}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dffa6e29c87ca2d4291b50d82038fe76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerTransform: {fileID: 0}
+  container: {fileID: 0}
+  targetToUnlock: {fileID: 0}
+  targetToDisableCollider: {fileID: 0}
+  pickUpRange: 3
+  throwForce: 10
 --- !u!54 &6302760085432225236
 Rigidbody:
   m_ObjectHideFlags: 0

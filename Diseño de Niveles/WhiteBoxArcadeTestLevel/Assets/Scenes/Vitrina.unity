@@ -30845,7 +30845,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
   m_LocalRotation: {x: 0, y: 0.9235319, z: 0, w: 0.38352174}
-  m_LocalPosition: {x: 128.41786, y: 3.7263, z: 1.1724997}
+  m_LocalPosition: {x: 133.1684, y: 2.715, z: -4.725624}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -55204,7 +55204,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1622641127}
   m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 1.739, y: -0.4531671, z: 2.489}
+  m_LocalPosition: {x: 1.739, y: -0.4531671, z: 2.595}
   m_LocalScale: {x: 1.3755832, y: 1.3608913, z: 1.2160655}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -55495,6 +55495,22 @@ PrefabInstance:
       propertyPath: BlockWallTransform
       value: 
       objectReference: {fileID: 445803470}
+    - target: {fileID: 3288878584384088028, guid: a8418a240607ae344a2d08cdd71d0728, type: 3}
+      propertyPath: container
+      value: 
+      objectReference: {fileID: 1561596668}
+    - target: {fileID: 3288878584384088028, guid: a8418a240607ae344a2d08cdd71d0728, type: 3}
+      propertyPath: targetToUnlock
+      value: 
+      objectReference: {fileID: 931635155}
+    - target: {fileID: 3288878584384088028, guid: a8418a240607ae344a2d08cdd71d0728, type: 3}
+      propertyPath: playerTransform
+      value: 
+      objectReference: {fileID: 1803646646}
+    - target: {fileID: 3288878584384088028, guid: a8418a240607ae344a2d08cdd71d0728, type: 3}
+      propertyPath: targetToDisableCollider
+      value: 
+      objectReference: {fileID: 931635154}
     - target: {fileID: 7640794859089502171, guid: a8418a240607ae344a2d08cdd71d0728, type: 3}
       propertyPath: m_Name
       value: WoodenDog (1)
@@ -59165,6 +59181,22 @@ PrefabInstance:
       propertyPath: BlockWallTransform
       value: 
       objectReference: {fileID: 445803470}
+    - target: {fileID: 3288878584384088028, guid: a8418a240607ae344a2d08cdd71d0728, type: 3}
+      propertyPath: container
+      value: 
+      objectReference: {fileID: 1561596668}
+    - target: {fileID: 3288878584384088028, guid: a8418a240607ae344a2d08cdd71d0728, type: 3}
+      propertyPath: targetToUnlock
+      value: 
+      objectReference: {fileID: 931635155}
+    - target: {fileID: 3288878584384088028, guid: a8418a240607ae344a2d08cdd71d0728, type: 3}
+      propertyPath: playerTransform
+      value: 
+      objectReference: {fileID: 1803646646}
+    - target: {fileID: 3288878584384088028, guid: a8418a240607ae344a2d08cdd71d0728, type: 3}
+      propertyPath: targetToDisableCollider
+      value: 
+      objectReference: {fileID: 931635154}
     - target: {fileID: 7640794859089502171, guid: a8418a240607ae344a2d08cdd71d0728, type: 3}
       propertyPath: m_Name
       value: WoodenDog
@@ -59852,7 +59884,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1777648220}
   m_LocalRotation: {x: 0.0000000127433015, y: 0.90397084, z: -0.000000026940434, w: 0.42759418}
-  m_LocalPosition: {x: 128.41786, y: 3.7263, z: 1.1724997}
+  m_LocalPosition: {x: 133.1684, y: 2.715, z: -4.725624}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -61093,7 +61125,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1803646646}
   - component: {fileID: 1803646655}
-  - component: {fileID: 1803646656}
   - component: {fileID: 1803646654}
   - component: {fileID: 1803646641}
   - component: {fileID: 1803646651}
@@ -61265,7 +61296,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1803646640}
   m_LocalRotation: {x: -0, y: 0.92353183, z: -0, w: 0.3835217}
-  m_LocalPosition: {x: 128.427, y: 3.7263, z: 1.165}
+  m_LocalPosition: {x: 133.464, y: 2.715, z: -4.896}
   m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -61331,24 +61362,6 @@ MonoBehaviour:
   look: {x: 0, y: 0}
   pickedUp: 0
   jumpValue: 0
---- !u!114 &1803646656
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1803646640}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dffa6e29c87ca2d4291b50d82038fe76, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  playerTransform: {fileID: 1803646646}
-  container: {fileID: 1561596668}
-  targetToUnlock: {fileID: 931635155}
-  targetToDisableCollider: {fileID: 931635154}
-  pickUpRange: 3
-  throwForce: 5
 --- !u!1001 &1804484491
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -73259,6 +73272,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1099747767}
     m_Modifications:
+    - target: {fileID: 687758415262169774, guid: f6751a852b40bb14a81aa0542df9ffb0, type: 3}
+      propertyPath: container
+      value: 
+      objectReference: {fileID: 1561596668}
+    - target: {fileID: 687758415262169774, guid: f6751a852b40bb14a81aa0542df9ffb0, type: 3}
+      propertyPath: targetToUnlock
+      value: 
+      objectReference: {fileID: 931635155}
+    - target: {fileID: 687758415262169774, guid: f6751a852b40bb14a81aa0542df9ffb0, type: 3}
+      propertyPath: playerTransform
+      value: 
+      objectReference: {fileID: 1803646646}
+    - target: {fileID: 687758415262169774, guid: f6751a852b40bb14a81aa0542df9ffb0, type: 3}
+      propertyPath: targetToDisableCollider
+      value: 
+      objectReference: {fileID: 931635154}
     - target: {fileID: 1529948849053042756, guid: f6751a852b40bb14a81aa0542df9ffb0, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -73380,6 +73409,22 @@ PrefabInstance:
       propertyPath: basketBasketballTransform
       value: 
       objectReference: {fileID: 732953347}
+    - target: {fileID: 8164164696145826084, guid: 8a31c0b8feef9d44ba7cf00fc80ca1d5, type: 3}
+      propertyPath: container
+      value: 
+      objectReference: {fileID: 1561596668}
+    - target: {fileID: 8164164696145826084, guid: 8a31c0b8feef9d44ba7cf00fc80ca1d5, type: 3}
+      propertyPath: targetToUnlock
+      value: 
+      objectReference: {fileID: 931635155}
+    - target: {fileID: 8164164696145826084, guid: 8a31c0b8feef9d44ba7cf00fc80ca1d5, type: 3}
+      propertyPath: playerTransform
+      value: 
+      objectReference: {fileID: 1803646646}
+    - target: {fileID: 8164164696145826084, guid: 8a31c0b8feef9d44ba7cf00fc80ca1d5, type: 3}
+      propertyPath: targetToDisableCollider
+      value: 
+      objectReference: {fileID: 931635154}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8a31c0b8feef9d44ba7cf00fc80ca1d5, type: 3}
 --- !u!1001 &3818783960880956193
@@ -73445,10 +73490,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: Balon (4)
       objectReference: {fileID: 0}
-    - target: {fileID: 3818783960991373739, guid: a96885cb05ae96d49ba4c452c5989248, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
+    - target: {fileID: 6418894306730653256, guid: a96885cb05ae96d49ba4c452c5989248, type: 3}
+      propertyPath: container
+      value: 
+      objectReference: {fileID: 1561596668}
+    - target: {fileID: 6418894306730653256, guid: a96885cb05ae96d49ba4c452c5989248, type: 3}
+      propertyPath: targetToUnlock
+      value: 
+      objectReference: {fileID: 931635155}
+    - target: {fileID: 6418894306730653256, guid: a96885cb05ae96d49ba4c452c5989248, type: 3}
+      propertyPath: playerTransform
+      value: 
+      objectReference: {fileID: 1803646646}
+    - target: {fileID: 6418894306730653256, guid: a96885cb05ae96d49ba4c452c5989248, type: 3}
+      propertyPath: targetToDisableCollider
+      value: 
+      objectReference: {fileID: 931635154}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a96885cb05ae96d49ba4c452c5989248, type: 3}
 --- !u!1001 &3952316097897704111
@@ -73458,21 +73515,25 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 506012078}
     m_Modifications:
+    - target: {fileID: 2058389370567036568, guid: 36ce89e69f9a6d7429305d170c032e6c, type: 3}
+      propertyPath: container
+      value: 
+      objectReference: {fileID: 1561596668}
+    - target: {fileID: 2058389370567036568, guid: 36ce89e69f9a6d7429305d170c032e6c, type: 3}
+      propertyPath: targetToUnlock
+      value: 
+      objectReference: {fileID: 931635155}
+    - target: {fileID: 2058389370567036568, guid: 36ce89e69f9a6d7429305d170c032e6c, type: 3}
+      propertyPath: playerTransform
+      value: 
+      objectReference: {fileID: 1803646646}
+    - target: {fileID: 2058389370567036568, guid: 36ce89e69f9a6d7429305d170c032e6c, type: 3}
+      propertyPath: targetToDisableCollider
+      value: 
+      objectReference: {fileID: 931635154}
     - target: {fileID: 3952316097403168566, guid: 36ce89e69f9a6d7429305d170c032e6c, type: 3}
       propertyPath: m_RootOrder
       value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 3952316097403168566, guid: 36ce89e69f9a6d7429305d170c032e6c, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.4842724
-      objectReference: {fileID: 0}
-    - target: {fileID: 3952316097403168566, guid: 36ce89e69f9a6d7429305d170c032e6c, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.48427233
-      objectReference: {fileID: 0}
-    - target: {fileID: 3952316097403168566, guid: 36ce89e69f9a6d7429305d170c032e6c, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.4842724
       objectReference: {fileID: 0}
     - target: {fileID: 3952316097403168566, guid: 36ce89e69f9a6d7429305d170c032e6c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -73592,6 +73653,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1099747767}
     m_Modifications:
+    - target: {fileID: 3369893123896963831, guid: 1917060b67169d34c8518e5b27a40bfb, type: 3}
+      propertyPath: container
+      value: 
+      objectReference: {fileID: 1561596668}
+    - target: {fileID: 3369893123896963831, guid: 1917060b67169d34c8518e5b27a40bfb, type: 3}
+      propertyPath: targetToUnlock
+      value: 
+      objectReference: {fileID: 931635155}
+    - target: {fileID: 3369893123896963831, guid: 1917060b67169d34c8518e5b27a40bfb, type: 3}
+      propertyPath: playerTransform
+      value: 
+      objectReference: {fileID: 1803646646}
+    - target: {fileID: 3369893123896963831, guid: 1917060b67169d34c8518e5b27a40bfb, type: 3}
+      propertyPath: targetToDisableCollider
+      value: 
+      objectReference: {fileID: 931635154}
     - target: {fileID: 3838636626815836564, guid: 1917060b67169d34c8518e5b27a40bfb, type: 3}
       propertyPath: basketBasketballGO
       value: 
@@ -73709,6 +73786,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4583573920590942850, guid: 3319f45d0550b48499c59ea5aa66a1c0, type: 3}
+      propertyPath: container
+      value: 
+      objectReference: {fileID: 1561596668}
+    - target: {fileID: 4583573920590942850, guid: 3319f45d0550b48499c59ea5aa66a1c0, type: 3}
+      propertyPath: targetToUnlock
+      value: 
+      objectReference: {fileID: 931635155}
+    - target: {fileID: 4583573920590942850, guid: 3319f45d0550b48499c59ea5aa66a1c0, type: 3}
+      propertyPath: playerTransform
+      value: 
+      objectReference: {fileID: 1803646646}
+    - target: {fileID: 4583573920590942850, guid: 3319f45d0550b48499c59ea5aa66a1c0, type: 3}
+      propertyPath: targetToDisableCollider
+      value: 
+      objectReference: {fileID: 931635154}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3319f45d0550b48499c59ea5aa66a1c0, type: 3}
 --- !u!1001 &5238472204229900831
@@ -73902,21 +73995,9 @@ PrefabInstance:
     m_TransformParent: {fileID: 506012078}
     m_Modifications:
     - target: {fileID: 5179318395665225346, guid: 17fbda11486feb345a646b4b058176cd, type: 3}
-      propertyPath: itemRB
-      value: 
-      objectReference: {fileID: 6098358725645957165}
-    - target: {fileID: 5179318395665225346, guid: 17fbda11486feb345a646b4b058176cd, type: 3}
       propertyPath: container
       value: 
       objectReference: {fileID: 1561596668}
-    - target: {fileID: 5179318395665225346, guid: 17fbda11486feb345a646b4b058176cd, type: 3}
-      propertyPath: throwForce
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 5179318395665225346, guid: 17fbda11486feb345a646b4b058176cd, type: 3}
-      propertyPath: itemCollider
-      value: 
-      objectReference: {fileID: 6098358725645957166}
     - target: {fileID: 5179318395665225346, guid: 17fbda11486feb345a646b4b058176cd, type: 3}
       propertyPath: targetToUnlock
       value: 
@@ -73936,18 +74017,6 @@ PrefabInstance:
     - target: {fileID: 6098358725185376711, guid: 17fbda11486feb345a646b4b058176cd, type: 3}
       propertyPath: m_RootOrder
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6098358725185376711, guid: 17fbda11486feb345a646b4b058176cd, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.4842724
-      objectReference: {fileID: 0}
-    - target: {fileID: 6098358725185376711, guid: 17fbda11486feb345a646b4b058176cd, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.48427233
-      objectReference: {fileID: 0}
-    - target: {fileID: 6098358725185376711, guid: 17fbda11486feb345a646b4b058176cd, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.4842724
       objectReference: {fileID: 0}
     - target: {fileID: 6098358725185376711, guid: 17fbda11486feb345a646b4b058176cd, type: 3}
       propertyPath: m_LocalPosition.x
@@ -73995,16 +74064,6 @@ PrefabInstance:
       objectReference: {fileID: 1404478508}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 17fbda11486feb345a646b4b058176cd, type: 3}
---- !u!54 &6098358725645957165 stripped
-Rigidbody:
-  m_CorrespondingSourceObject: {fileID: 6098358725185376704, guid: 17fbda11486feb345a646b4b058176cd, type: 3}
-  m_PrefabInstance: {fileID: 6098358725645957164}
-  m_PrefabAsset: {fileID: 0}
---- !u!135 &6098358725645957166 stripped
-SphereCollider:
-  m_CorrespondingSourceObject: {fileID: 6098358725185376705, guid: 17fbda11486feb345a646b4b058176cd, type: 3}
-  m_PrefabInstance: {fileID: 6098358725645957164}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &6302760084212127405
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -74022,7 +74081,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6302760085432225237, guid: 4066f0aa4dbf6654ba66ee82578ebb4a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.7548
+      value: 1.832
       objectReference: {fileID: 0}
     - target: {fileID: 6302760085432225237, guid: 4066f0aa4dbf6654ba66ee82578ebb4a, type: 3}
       propertyPath: m_LocalPosition.y
@@ -74030,7 +74089,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6302760085432225237, guid: 4066f0aa4dbf6654ba66ee82578ebb4a, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 2.3478
+      value: 2.3847
       objectReference: {fileID: 0}
     - target: {fileID: 6302760085432225237, guid: 4066f0aa4dbf6654ba66ee82578ebb4a, type: 3}
       propertyPath: m_LocalRotation.w
@@ -74064,7 +74123,28 @@ PrefabInstance:
       propertyPath: m_Name
       value: LLave
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 8195225208627765787, guid: 4066f0aa4dbf6654ba66ee82578ebb4a, type: 3}
+      propertyPath: targetToUnlock
+      value: 
+      objectReference: {fileID: 931635156}
+    - target: {fileID: 8363019899142449633, guid: 4066f0aa4dbf6654ba66ee82578ebb4a, type: 3}
+      propertyPath: container
+      value: 
+      objectReference: {fileID: 1561596668}
+    - target: {fileID: 8363019899142449633, guid: 4066f0aa4dbf6654ba66ee82578ebb4a, type: 3}
+      propertyPath: targetToUnlock
+      value: 
+      objectReference: {fileID: 931635155}
+    - target: {fileID: 8363019899142449633, guid: 4066f0aa4dbf6654ba66ee82578ebb4a, type: 3}
+      propertyPath: playerTransform
+      value: 
+      objectReference: {fileID: 1803646646}
+    - target: {fileID: 8363019899142449633, guid: 4066f0aa4dbf6654ba66ee82578ebb4a, type: 3}
+      propertyPath: targetToDisableCollider
+      value: 
+      objectReference: {fileID: 931635154}
+    m_RemovedComponents:
+    - {fileID: 192863503543121516, guid: 4066f0aa4dbf6654ba66ee82578ebb4a, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 4066f0aa4dbf6654ba66ee82578ebb4a, type: 3}
 --- !u!1001 &6639562627098449216
 PrefabInstance:
@@ -74073,6 +74153,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 506012078}
     m_Modifications:
+    - target: {fileID: 3892882184667780964, guid: 44f9df1b5a3083649a350615c6fb9799, type: 3}
+      propertyPath: container
+      value: 
+      objectReference: {fileID: 1561596668}
+    - target: {fileID: 3892882184667780964, guid: 44f9df1b5a3083649a350615c6fb9799, type: 3}
+      propertyPath: targetToUnlock
+      value: 
+      objectReference: {fileID: 931635155}
+    - target: {fileID: 3892882184667780964, guid: 44f9df1b5a3083649a350615c6fb9799, type: 3}
+      propertyPath: playerTransform
+      value: 
+      objectReference: {fileID: 1803646646}
+    - target: {fileID: 3892882184667780964, guid: 44f9df1b5a3083649a350615c6fb9799, type: 3}
+      propertyPath: targetToDisableCollider
+      value: 
+      objectReference: {fileID: 931635154}
     - target: {fileID: 4286415163667187144, guid: 44f9df1b5a3083649a350615c6fb9799, type: 3}
       propertyPath: bowlingPines
       value: 
@@ -74215,6 +74311,22 @@ PrefabInstance:
       propertyPath: basketBasketballTransform
       value: 
       objectReference: {fileID: 1954422611}
+    - target: {fileID: 5467884601208625993, guid: e7f106c4593a66f4c82f6781ad2dbd8b, type: 3}
+      propertyPath: container
+      value: 
+      objectReference: {fileID: 1561596668}
+    - target: {fileID: 5467884601208625993, guid: e7f106c4593a66f4c82f6781ad2dbd8b, type: 3}
+      propertyPath: targetToUnlock
+      value: 
+      objectReference: {fileID: 931635155}
+    - target: {fileID: 5467884601208625993, guid: e7f106c4593a66f4c82f6781ad2dbd8b, type: 3}
+      propertyPath: playerTransform
+      value: 
+      objectReference: {fileID: 1803646646}
+    - target: {fileID: 5467884601208625993, guid: e7f106c4593a66f4c82f6781ad2dbd8b, type: 3}
+      propertyPath: targetToDisableCollider
+      value: 
+      objectReference: {fileID: 931635154}
     - target: {fileID: 7174500787416558280, guid: e7f106c4593a66f4c82f6781ad2dbd8b, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -74262,10 +74374,6 @@ PrefabInstance:
     - target: {fileID: 7174500787416558283, guid: e7f106c4593a66f4c82f6781ad2dbd8b, type: 3}
       propertyPath: m_Name
       value: Balon (3)
-      objectReference: {fileID: 0}
-    - target: {fileID: 7174500787416558283, guid: e7f106c4593a66f4c82f6781ad2dbd8b, type: 3}
-      propertyPath: m_Layer
-      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e7f106c4593a66f4c82f6781ad2dbd8b, type: 3}
@@ -74393,10 +74501,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: Balon (5)
       objectReference: {fileID: 0}
-    - target: {fileID: 7496894000291697466, guid: 3bd4e282e9ccf364e8bb5a11ccc3603b, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
+    - target: {fileID: 9204116408358816546, guid: 3bd4e282e9ccf364e8bb5a11ccc3603b, type: 3}
+      propertyPath: container
+      value: 
+      objectReference: {fileID: 1561596668}
+    - target: {fileID: 9204116408358816546, guid: 3bd4e282e9ccf364e8bb5a11ccc3603b, type: 3}
+      propertyPath: targetToUnlock
+      value: 
+      objectReference: {fileID: 931635155}
+    - target: {fileID: 9204116408358816546, guid: 3bd4e282e9ccf364e8bb5a11ccc3603b, type: 3}
+      propertyPath: playerTransform
+      value: 
+      objectReference: {fileID: 1803646646}
+    - target: {fileID: 9204116408358816546, guid: 3bd4e282e9ccf364e8bb5a11ccc3603b, type: 3}
+      propertyPath: targetToDisableCollider
+      value: 
+      objectReference: {fileID: 931635154}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3bd4e282e9ccf364e8bb5a11ccc3603b, type: 3}
 --- !u!1001 &7718570758980199416
@@ -74467,6 +74587,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 506012078}
     m_Modifications:
+    - target: {fileID: 1958132950583177281, guid: 9f265308c85d1934097c47bc95eec2e5, type: 3}
+      propertyPath: container
+      value: 
+      objectReference: {fileID: 1561596668}
+    - target: {fileID: 1958132950583177281, guid: 9f265308c85d1934097c47bc95eec2e5, type: 3}
+      propertyPath: targetToUnlock
+      value: 
+      objectReference: {fileID: 931635155}
+    - target: {fileID: 1958132950583177281, guid: 9f265308c85d1934097c47bc95eec2e5, type: 3}
+      propertyPath: playerTransform
+      value: 
+      objectReference: {fileID: 1803646646}
+    - target: {fileID: 1958132950583177281, guid: 9f265308c85d1934097c47bc95eec2e5, type: 3}
+      propertyPath: targetToDisableCollider
+      value: 
+      objectReference: {fileID: 931635154}
     - target: {fileID: 4137357002573186627, guid: 9f265308c85d1934097c47bc95eec2e5, type: 3}
       propertyPath: bowlingPines
       value: 
@@ -74478,18 +74614,6 @@ PrefabInstance:
     - target: {fileID: 7757406007716318001, guid: 9f265308c85d1934097c47bc95eec2e5, type: 3}
       propertyPath: m_RootOrder
       value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 7757406007716318001, guid: 9f265308c85d1934097c47bc95eec2e5, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.4842724
-      objectReference: {fileID: 0}
-    - target: {fileID: 7757406007716318001, guid: 9f265308c85d1934097c47bc95eec2e5, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.48427233
-      objectReference: {fileID: 0}
-    - target: {fileID: 7757406007716318001, guid: 9f265308c85d1934097c47bc95eec2e5, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.4842724
       objectReference: {fileID: 0}
     - target: {fileID: 7757406007716318001, guid: 9f265308c85d1934097c47bc95eec2e5, type: 3}
       propertyPath: m_LocalPosition.x

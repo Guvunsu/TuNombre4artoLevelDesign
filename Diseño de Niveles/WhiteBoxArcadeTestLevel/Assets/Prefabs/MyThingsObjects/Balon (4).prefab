@@ -15,7 +15,8 @@ GameObject:
   - component: {fileID: 3818783960991373741}
   - component: {fileID: 4747053719839268415}
   - component: {fileID: 1844141477905126879}
-  m_Layer: 0
+  - component: {fileID: 6418894306730653256}
+  m_Layer: 6
   m_Name: Balon (4)
   m_TagString: BasketBall
   m_Icon: {fileID: 0}
@@ -143,5 +144,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   throwBallForce: 8
-  basketBasketballGO: {fileID: 6021053757929333580, guid: e406a8fbbd0bd804cbc3e0658b7effed, type: 3}
-  basketBasketballTransform: {fileID: 6021053757929333581, guid: e406a8fbbd0bd804cbc3e0658b7effed, type: 3}
+  basketBasketballTransform: {fileID: 0}
+  basketBasketballGO: {fileID: 0}
+--- !u!114 &6418894306730653256
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3818783960991373739}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dffa6e29c87ca2d4291b50d82038fe76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerTransform: {fileID: 0}
+  container: {fileID: 0}
+  targetToUnlock: {fileID: 0}
+  targetToDisableCollider: {fileID: 0}
+  pickUpRange: 3
+  throwForce: 10
