@@ -184,7 +184,7 @@ public class PickupController : MonoBehaviour {
             scrip_bowlingBallForce.MovBowlingBallForwardInteract();
         }
         if (CompareTag("BomberTruck") && script_BomberTruckMovingForward != null) {
-            script_BomberTruckMovingForward.MoveCarForwarWithInteract();
+            script_BomberTruckMovingForward.StartMoving();
         }
         if (CompareTag("Basketball") && script_BasketballGame != null) {
             script_BasketballGame.ThrownBallBasketball();
