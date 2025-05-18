@@ -40,7 +40,7 @@ public class BasketballGame : MonoBehaviour {
         if (collision.gameObject.CompareTag("Canasta")) {
             Debug.Log("¡Anotaste!");
             StartCoroutine(DestroyAfterSeconds(2f));
-        } else if (collision.gameObject.CompareTag("Ground")) {
+        } else if (collision.gameObject.CompareTag("Vitrina")) {
             hasBeenThrown = false;
             Debug.Log("Fallaste, puedes lanzar de nuevo");
         }

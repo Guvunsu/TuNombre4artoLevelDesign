@@ -9,7 +9,7 @@ public class KeyOpenShowCase : MonoBehaviour {
 
     #region CollisionDestroyBoxCollider
     private void OnCollisionEnter(Collision other) {
-        if (other.gameObject.CompareTag("KeyVitrina")) {
+        if (other.gameObject.CompareTag("Player")) {
             Debug.Log("Llave recogida, desactivando colisionadores de la vitrina...");
             foreach (BoxCollider bc in targetToUnlock.GetComponentsInChildren<BoxCollider>()) {
                 bc.enabled = false;
