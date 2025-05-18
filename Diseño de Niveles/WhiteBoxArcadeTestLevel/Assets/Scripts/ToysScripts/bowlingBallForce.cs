@@ -2,10 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class bowlingBallForce : MonoBehaviour
-{
+public class bowlingBallForce : MonoBehaviour {
     #region Variables
-    [SerializeField] float moveSpeed;
+    [SerializeField] float moveSpeed = 10f;
     bool iTouchedPines = false;
 
     Vector3 direction;
@@ -17,12 +16,10 @@ public class bowlingBallForce : MonoBehaviour
     #endregion Variables
 
     #region PublicMethods
-    void Start()
-    {
+    void Start() {
         bowlingBallRB = GetComponent<Rigidbody>();
     }
-    void Update()
-    {
+    void Update() {
         if (Input.GetKeyDown(KeyCode.E))
             MovBowlingBallForwardInteract();
     }
@@ -30,8 +27,7 @@ public class bowlingBallForce : MonoBehaviour
     #endregion PublicMethods
 
     #region MoveBall
-    public void MovBowlingBallForwardInteract()
-    {
+    public void MovBowlingBallForwardInteract() {
         direction = (bowlingPines.position - transform.position).normalized;
         Debug.Log("avance a la direccion correcta? para EL BOLICHE");
         bowlingBallRB.AddForce(direction * moveSpeed * Time.deltaTime, ForceMode.Impulse);
@@ -41,17 +37,14 @@ public class bowlingBallForce : MonoBehaviour
     #endregion MoveBall
 
     #region CollsionDestroy
-    public void OnCollisionEnter(Collision collision)
-    {
-        if (collision.gameObject.CompareTag("BowlPine"))
-        {
+    public void OnCollisionEnter(Collision collision) {
+        if (collision.gameObject.CompareTag("BowlPine")) {
             StartCoroutine(DestroyAfterSeconds(6f));
-        }
+        } 
     }
-    IEnumerator DestroyAfterSeconds(float seconds)
-    {
+    IEnumerator DestroyAfterSeconds(float seconds) {
         yield return new WaitForSeconds(seconds);
-        Destroy(gameObject);
+        //Destroy(gameObject);
     }
     #endregion CollsionDestroy
 }

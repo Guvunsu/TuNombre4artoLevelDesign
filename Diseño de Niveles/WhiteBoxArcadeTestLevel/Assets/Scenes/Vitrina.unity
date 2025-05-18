@@ -4252,7 +4252,7 @@ GameObject:
   - component: {fileID: 124359112}
   m_Layer: 0
   m_Name: HandSlot
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -49024,7 +49024,7 @@ GameObject:
   - component: {fileID: 1561596669}
   m_Layer: 0
   m_Name: Container
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -61338,13 +61338,11 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1803646640}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: dffa6e29c87ca2d4291b50d82038fe76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemRB: {fileID: 0}
-  itemCollider: {fileID: 0}
   playerTransform: {fileID: 1803646646}
   container: {fileID: 1561596668}
   targetToUnlock: {fileID: 931635155}
@@ -73903,6 +73901,34 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 506012078}
     m_Modifications:
+    - target: {fileID: 5179318395665225346, guid: 17fbda11486feb345a646b4b058176cd, type: 3}
+      propertyPath: itemRB
+      value: 
+      objectReference: {fileID: 6098358725645957165}
+    - target: {fileID: 5179318395665225346, guid: 17fbda11486feb345a646b4b058176cd, type: 3}
+      propertyPath: container
+      value: 
+      objectReference: {fileID: 1561596668}
+    - target: {fileID: 5179318395665225346, guid: 17fbda11486feb345a646b4b058176cd, type: 3}
+      propertyPath: throwForce
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 5179318395665225346, guid: 17fbda11486feb345a646b4b058176cd, type: 3}
+      propertyPath: itemCollider
+      value: 
+      objectReference: {fileID: 6098358725645957166}
+    - target: {fileID: 5179318395665225346, guid: 17fbda11486feb345a646b4b058176cd, type: 3}
+      propertyPath: targetToUnlock
+      value: 
+      objectReference: {fileID: 931635155}
+    - target: {fileID: 5179318395665225346, guid: 17fbda11486feb345a646b4b058176cd, type: 3}
+      propertyPath: playerTransform
+      value: 
+      objectReference: {fileID: 1803646646}
+    - target: {fileID: 5179318395665225346, guid: 17fbda11486feb345a646b4b058176cd, type: 3}
+      propertyPath: targetToDisableCollider
+      value: 
+      objectReference: {fileID: 931635154}
     - target: {fileID: 6098358725185376710, guid: 17fbda11486feb345a646b4b058176cd, type: 3}
       propertyPath: m_Name
       value: BowlBall (2)
@@ -73969,6 +73995,16 @@ PrefabInstance:
       objectReference: {fileID: 1404478508}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 17fbda11486feb345a646b4b058176cd, type: 3}
+--- !u!54 &6098358725645957165 stripped
+Rigidbody:
+  m_CorrespondingSourceObject: {fileID: 6098358725185376704, guid: 17fbda11486feb345a646b4b058176cd, type: 3}
+  m_PrefabInstance: {fileID: 6098358725645957164}
+  m_PrefabAsset: {fileID: 0}
+--- !u!135 &6098358725645957166 stripped
+SphereCollider:
+  m_CorrespondingSourceObject: {fileID: 6098358725185376705, guid: 17fbda11486feb345a646b4b058176cd, type: 3}
+  m_PrefabInstance: {fileID: 6098358725645957164}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &6302760084212127405
 PrefabInstance:
   m_ObjectHideFlags: 0

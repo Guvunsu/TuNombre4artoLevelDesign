@@ -156,17 +156,24 @@ public class PickupController : MonoBehaviour {
         slotFull = true;
         GetComponent<Renderer>().material.color = Color.white;
 
-        // Opcional: evita que se recojan objetos incorrectos al revisar el tag
         if (!CompareTag("BowlBall") && !CompareTag("BomberTruck") && !CompareTag("Basketball") && !CompareTag("KeyVitrina"))
             return;
 
-        // Setear como hijo del contenedor (mano del jugador)
-        Transform handSlot = playerTransform.GetChild(0); // asegúrate que el contenedor esté como primer hijo
-        transform.SetParent(handSlot);
+        Vector3 worldScale = transform.lossyScale;
+
+        transform.SetParent(container);
         transform.localPosition = Vector3.zero;
         transform.localRotation = Quaternion.identity;
-        transform.localScale = originalScale;
+
+        // Reaplicar escala global
+        transform.localScale = Vector3.one;
+        transform.localScale = new Vector3(
+            worldScale.x / container.lossyScale.x,
+            worldScale.y / container.lossyScale.y,
+            worldScale.z / container.lossyScale.z
+        );
     }
+
     private void Drop() {
         equipped = false;
         slotFull = false;
@@ -193,4 +200,3 @@ public class PickupController : MonoBehaviour {
         }
     }
 }
-
