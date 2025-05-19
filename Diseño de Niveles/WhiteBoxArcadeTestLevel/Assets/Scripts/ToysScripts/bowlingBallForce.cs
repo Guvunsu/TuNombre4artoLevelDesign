@@ -7,7 +7,7 @@ public class bowlingBallForce : MonoBehaviour {
     [SerializeField] float moveSpeed = 10f;
     bool iTouchedPines = false;
 
-    Vector3 direction;
+    Vector3 direction = Vector3.forward; // le agregue el forward, luego hay que probarlo
 
     [SerializeField] Transform bowlingPines;
     GameObject bowlingBallGO;
@@ -30,7 +30,7 @@ public class bowlingBallForce : MonoBehaviour {
     public void MovBowlingBallForwardInteract() {
         direction = (bowlingPines.position - transform.position).normalized;
         Debug.Log("avance a la direccion correcta? para EL BOLICHE");
-        bowlingBallRB.AddForce(direction * moveSpeed * Time.deltaTime, ForceMode.Impulse);
+        bowlingBallRB.AddForce(direction * 20 * moveSpeed * Time.deltaTime, ForceMode.Impulse);
         Debug.Log("le agrego la fuerza y velocidad, para EL BOLICHE");
     }
 
@@ -40,11 +40,11 @@ public class bowlingBallForce : MonoBehaviour {
     public void OnCollisionEnter(Collision collision) {
         if (collision.gameObject.CompareTag("BowlPine")) {
             StartCoroutine(DestroyAfterSeconds(6f));
-        } 
+        }
     }
     IEnumerator DestroyAfterSeconds(float seconds) {
         yield return new WaitForSeconds(seconds);
-        //Destroy(gameObject);
+        Destroy(gameObject, 6f);
     }
     #endregion CollsionDestroy
 }

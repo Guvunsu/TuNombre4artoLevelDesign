@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class BasketballGame : MonoBehaviour {
     #region Variables
-    [SerializeField] float throwBallForce;
-
+    [SerializeField] float throwBallForce = 18f;
+    [SerializeField] float interactDistance = 2.5f; // Distancia mínima para lanzar
+    [SerializeField] Transform playerTransform;     // Asigna el jugador en el Inspector
     [SerializeField] Transform basketBasketballTransform;
 
     Rigidbody ballBasketballRB;
@@ -19,20 +20,28 @@ public class BasketballGame : MonoBehaviour {
     void Start() {
         ballBasketballRB = GetComponent<Rigidbody>();
     }
+
     void Update() {
-        if (!hasBeenThrown && Input.GetKeyDown(KeyCode.E))
+        float distanceToPlayer = Vector3.Distance(transform.position, playerTransform.position);
+
+        if (!hasBeenThrown && distanceToPlayer <= interactDistance && Input.GetKeyDown(KeyCode.E)) {
             ThrownBallBasketball();
+        }
     }
     #endregion PublicMethods
 
     #region ThrownBall
     public void ThrownBallBasketball() {
-        direction = (basketBasketballTransform.position - transform.position).normalized + Vector3.up * 0.666f;
-        ballBasketballRB.AddForce(direction * throwBallForce * Time.deltaTime, ForceMode.Impulse);
-        hasBeenThrown = true;
-        Debug.Log("Lance la pelota");
-    }
+        Vector3 targetOffset = new Vector3(0f, 1.5f, 0f);
+        Vector3 finalTarget = basketBasketballTransform.position + targetOffset;
 
+        direction = (finalTarget - transform.position).normalized + Vector3.up * 0.5f;
+
+        ballBasketballRB.AddForce(direction * throwBallForce, ForceMode.Impulse);
+
+        hasBeenThrown = true;
+        Debug.Log("Lancé la pelota con parábola hacia el aro.");
+    }
     #endregion ThrownBall
 
     #region CollisionDestroy
@@ -45,9 +54,10 @@ public class BasketballGame : MonoBehaviour {
             Debug.Log("Fallaste, puedes lanzar de nuevo");
         }
     }
+
     IEnumerator DestroyAfterSeconds(float seconds) {
         yield return new WaitForSeconds(seconds);
         Destroy(gameObject);
     }
-    #endregion  CollisionDestroy
+    #endregion CollisionDestroy
 }

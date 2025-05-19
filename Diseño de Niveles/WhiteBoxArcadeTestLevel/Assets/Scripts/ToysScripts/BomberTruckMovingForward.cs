@@ -1,18 +1,16 @@
 using UnityEngine;
 
 public class BomberTruckMovingForward : MonoBehaviour {
-    [SerializeField] private float moveSpeed = 20f;
+    [SerializeField] float moveSpeed = 18f;
 
-    private bool shouldMove = false;
-    private Vector3 moveDirection = Vector3.forward; // Puedes cambiar la dirección aquí
+    bool shouldMove = false;
+    Vector3 moveDirection = Vector3.forward;
 
     void Update() {
         if (shouldMove) {
             transform.position += moveDirection.normalized * moveSpeed * Time.deltaTime;
         }
     }
-
-    // Llamar a esta función desde otro script cuando se suelte el objeto
     public void StartMoving() {
         shouldMove = true;
         Debug.Log("El BomberTruck ha comenzado a moverse.");

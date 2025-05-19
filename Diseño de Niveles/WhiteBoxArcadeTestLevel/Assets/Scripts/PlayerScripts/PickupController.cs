@@ -156,7 +156,7 @@ public class PickupController : MonoBehaviour {
         slotFull = true;
         GetComponent<Renderer>().material.color = Color.white;
 
-        if (!CompareTag("BowlBall") && !CompareTag("BomberTruck") && !CompareTag("Basketball") && !CompareTag("KeyVitrina"))
+        if (!CompareTag("BowlBall") && !CompareTag("BomberTruck") && !CompareTag("BasketBall") && !CompareTag("KeyVitrina"))
             return;
 
         Vector3 worldScale = transform.lossyScale;
@@ -186,7 +186,7 @@ public class PickupController : MonoBehaviour {
         if (CompareTag("BomberTruck") && script_BomberTruckMovingForward != null) {
             script_BomberTruckMovingForward.StartMoving();
         }
-        if (CompareTag("Basketball") && script_BasketballGame != null) {
+        if (CompareTag("BasketBall") && script_BasketballGame != null) {
             script_BasketballGame.ThrownBallBasketball();
         }
     }

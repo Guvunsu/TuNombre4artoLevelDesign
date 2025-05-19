@@ -14,7 +14,6 @@ GameObject:
   - component: {fileID: 7174500787416558286}
   - component: {fileID: 7174500787416558281}
   - component: {fileID: 4393351260289019272}
-  - component: {fileID: 7369929528024806736}
   - component: {fileID: 5467884601208625993}
   m_Layer: 6
   m_Name: Balon (3)
@@ -130,22 +129,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   throwBallForce: 8
+  interactDistance: 2.5
+  playerTransform: {fileID: 0}
   basketBasketballTransform: {fileID: 0}
   basketBasketballGO: {fileID: 0}
---- !u!114 &7369929528024806736
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7174500787416558283}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7e91de0e1c37fff418c3ff3597f1c1b2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  targetTag: Canasta
-  delayBeforeDeactivate: 3
 --- !u!114 &5467884601208625993
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -162,5 +149,5 @@ MonoBehaviour:
   container: {fileID: 0}
   targetToUnlock: {fileID: 0}
   targetToDisableCollider: {fileID: 0}
-  pickUpRange: 3
+  pickUpRange: 1
   throwForce: 10

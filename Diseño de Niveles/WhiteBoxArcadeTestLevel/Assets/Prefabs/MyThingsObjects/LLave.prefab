@@ -948,7 +948,7 @@ MonoBehaviour:
   container: {fileID: 0}
   targetToUnlock: {fileID: 0}
   targetToDisableCollider: {fileID: 0}
-  pickUpRange: 3
+  pickUpRange: 1
   throwForce: 10
 --- !u!54 &6302760085432225236
 Rigidbody:

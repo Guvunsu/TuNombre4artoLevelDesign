@@ -9,7 +9,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4212901090854076002}
-  - component: {fileID: 875099214575206358}
   - component: {fileID: 4212901090854076014}
   - component: {fileID: 4212901090854076015}
   - component: {fileID: 4212901090854076000}
@@ -38,20 +37,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &875099214575206358
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4212901090854076003}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7e91de0e1c37fff418c3ff3597f1c1b2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  targetTag: Canasta
-  delayBeforeDeactivate: 3
 --- !u!33 &4212901090854076014
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -144,6 +129,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   throwBallForce: 8
+  interactDistance: 2.5
+  playerTransform: {fileID: 0}
   basketBasketballTransform: {fileID: 0}
   basketBasketballGO: {fileID: 0}
 --- !u!114 &3369893123896963831
@@ -162,5 +149,5 @@ MonoBehaviour:
   container: {fileID: 0}
   targetToUnlock: {fileID: 0}
   targetToDisableCollider: {fileID: 0}
-  pickUpRange: 3
+  pickUpRange: 1
   throwForce: 10

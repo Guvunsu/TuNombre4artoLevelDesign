@@ -54,8 +54,8 @@ MonoBehaviour:
   container: {fileID: 0}
   targetToUnlock: {fileID: 0}
   targetToDisableCollider: {fileID: 0}
-  pickUpRange: 3
-  throwForce: 10
+  pickUpRange: 1
+  throwForce: 20
 --- !u!114 &4137357002573186627
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -68,7 +68,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d577a6b836df34146bf60824565caa38, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 10
+  moveSpeed: 20
   bowlingPines: {fileID: 0}
 --- !u!33 &7757406007716318005
 MeshFilter:

@@ -54,7 +54,7 @@ MonoBehaviour:
   container: {fileID: 0}
   targetToUnlock: {fileID: 0}
   targetToDisableCollider: {fileID: 0}
-  pickUpRange: 3
+  pickUpRange: 1
   throwForce: 20
 --- !u!114 &8546223066572302515
 MonoBehaviour:
