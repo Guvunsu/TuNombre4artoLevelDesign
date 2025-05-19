@@ -43,17 +43,27 @@ public class PlayerController : MonoBehaviour {
     #region Movement
     void MovePlayer() {
         float speed = 0;
-        Vector3 moveInput = new Vector3(input.move.x, 0, input.move.y); // probar al rato si poneindolo Space.World o Self arregle el bug de andar 
-        Vector3 moveDirection = new Vector3(input.move.x, 0, input.move.y);
-        float targetRotation = 0f;
-        if (input.move != Vector2.zero) {
+        Vector3 moveInput = new Vector3(input.move.x, 0, input.move.y);
+
+        if (moveInput.magnitude >= 0.1f) {
             speed = moveSpeed;
-            targetRotation = Quaternion.LookRotation(moveInput).eulerAngles.y + playerVcam.transform.rotation.eulerAngles.y;
-            Quaternion rotation = Quaternion.Euler(0, targetRotation, 0);
-            transform.rotation = Quaternion.Slerp(transform.rotation, rotation, 20 * Time.deltaTime);
+
+            // Obtén dirección relativa a la cámara
+            Vector3 camForward = cameraFollowTarget.forward;
+            Vector3 camRight = cameraFollowTarget.right;
+            camForward.y = 0;
+            camRight.y = 0;
+            camForward.Normalize();
+            camRight.Normalize();
+
+            Vector3 moveDirection = camRight * moveInput.x + camForward * moveInput.z;
+
+            // Rotación hacia la dirección de movimiento
+            Quaternion targetRotation = Quaternion.LookRotation(moveDirection);
+            transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, 10f * Time.deltaTime);
+
+            characterController.Move(moveDirection.normalized * speed * Time.deltaTime);
         }
-        Vector3 targetDurectioin = Quaternion.Euler(0, targetRotation, 0) * Vector3.forward;
-        characterController.Move(targetDurectioin * speed * Time.deltaTime);
     }
 
     #endregion Movement

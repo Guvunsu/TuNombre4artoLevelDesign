@@ -73984,10 +73984,6 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1561596668}
     - target: {fileID: 687758415262169774, guid: f6751a852b40bb14a81aa0542df9ffb0, type: 3}
-      propertyPath: throwForce
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 687758415262169774, guid: f6751a852b40bb14a81aa0542df9ffb0, type: 3}
       propertyPath: targetToUnlock
       value: 
       objectReference: {fileID: 931635155}
@@ -74055,8 +74051,7 @@ PrefabInstance:
       propertyPath: basketBasketballTransform
       value: 
       objectReference: {fileID: 732953347}
-    m_RemovedComponents:
-    - {fileID: 3339796098194273921, guid: f6751a852b40bb14a81aa0542df9ffb0, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f6751a852b40bb14a81aa0542df9ffb0, type: 3}
 --- !u!1001 &3088320029965691716
 PrefabInstance:
@@ -74295,6 +74290,14 @@ PrefabInstance:
       propertyPath: bowlingPines
       value: 
       objectReference: {fileID: 1404478508}
+    - target: {fileID: 7008796532859757159, guid: 36ce89e69f9a6d7429305d170c032e6c, type: 3}
+      propertyPath: handTransform
+      value: 
+      objectReference: {fileID: 1561596668}
+    - target: {fileID: 7008796532859757159, guid: 36ce89e69f9a6d7429305d170c032e6c, type: 3}
+      propertyPath: playerTransform
+      value: 
+      objectReference: {fileID: 1803646646}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 36ce89e69f9a6d7429305d170c032e6c, type: 3}
 --- !u!1001 &4183059143044510026
@@ -74369,10 +74372,6 @@ PrefabInstance:
       propertyPath: container
       value: 
       objectReference: {fileID: 1561596668}
-    - target: {fileID: 3369893123896963831, guid: 1917060b67169d34c8518e5b27a40bfb, type: 3}
-      propertyPath: throwForce
-      value: 10
-      objectReference: {fileID: 0}
     - target: {fileID: 3369893123896963831, guid: 1917060b67169d34c8518e5b27a40bfb, type: 3}
       propertyPath: targetToUnlock
       value: 
@@ -74716,7 +74715,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6302760085432225237, guid: 4066f0aa4dbf6654ba66ee82578ebb4a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.8289
+      value: 1.598
       objectReference: {fileID: 0}
     - target: {fileID: 6302760085432225237, guid: 4066f0aa4dbf6654ba66ee82578ebb4a, type: 3}
       propertyPath: m_LocalPosition.y
@@ -74724,7 +74723,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6302760085432225237, guid: 4066f0aa4dbf6654ba66ee82578ebb4a, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 2.3847
+      value: 2.04
       objectReference: {fileID: 0}
     - target: {fileID: 6302760085432225237, guid: 4066f0aa4dbf6654ba66ee82578ebb4a, type: 3}
       propertyPath: m_LocalRotation.w
@@ -74787,6 +74786,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 506012078}
     m_Modifications:
+    - target: {fileID: 2265177179142057178, guid: 44f9df1b5a3083649a350615c6fb9799, type: 3}
+      propertyPath: bowlingPines
+      value: 
+      objectReference: {fileID: 1550503303}
+    - target: {fileID: 2265177179142057178, guid: 44f9df1b5a3083649a350615c6fb9799, type: 3}
+      propertyPath: handTransform
+      value: 
+      objectReference: {fileID: 1561596668}
+    - target: {fileID: 2265177179142057178, guid: 44f9df1b5a3083649a350615c6fb9799, type: 3}
+      propertyPath: playerTransform
+      value: 
+      objectReference: {fileID: 1803646646}
     - target: {fileID: 3892882184667780964, guid: 44f9df1b5a3083649a350615c6fb9799, type: 3}
       propertyPath: container
       value: 
@@ -74803,10 +74814,6 @@ PrefabInstance:
       propertyPath: targetToDisableCollider
       value: 
       objectReference: {fileID: 931635154}
-    - target: {fileID: 4286415163667187144, guid: 44f9df1b5a3083649a350615c6fb9799, type: 3}
-      propertyPath: bowlingPines
-      value: 
-      objectReference: {fileID: 0}
     - target: {fileID: 6639562628765353869, guid: 44f9df1b5a3083649a350615c6fb9799, type: 3}
       propertyPath: m_Name
       value: BowlBall (3)
@@ -75128,10 +75135,6 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1561596668}
     - target: {fileID: 9204116408358816546, guid: 3bd4e282e9ccf364e8bb5a11ccc3603b, type: 3}
-      propertyPath: throwForce
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 9204116408358816546, guid: 3bd4e282e9ccf364e8bb5a11ccc3603b, type: 3}
       propertyPath: targetToUnlock
       value: 
       objectReference: {fileID: 931635155}
@@ -75233,6 +75236,14 @@ PrefabInstance:
       propertyPath: bowlingPines
       value: 
       objectReference: {fileID: 1404478508}
+    - target: {fileID: 4137357002573186627, guid: 9f265308c85d1934097c47bc95eec2e5, type: 3}
+      propertyPath: handTransform
+      value: 
+      objectReference: {fileID: 1561596668}
+    - target: {fileID: 4137357002573186627, guid: 9f265308c85d1934097c47bc95eec2e5, type: 3}
+      propertyPath: playerTransform
+      value: 
+      objectReference: {fileID: 1803646646}
     - target: {fileID: 7757406007716318000, guid: 9f265308c85d1934097c47bc95eec2e5, type: 3}
       propertyPath: m_Name
       value: BowlBall (1)

@@ -5,46 +5,81 @@ using UnityEngine;
 public class bowlingBallForce : MonoBehaviour {
     #region Variables
     [SerializeField] float moveSpeed = 10f;
-    bool iTouchedPines = false;
-
-    Vector3 direction = Vector3.forward; // le agregue el forward, luego hay que probarlo
-
+    [SerializeField] float interactDistance = 2.5f;
+    [SerializeField] Transform playerTransform;
     [SerializeField] Transform bowlingPines;
-    GameObject bowlingBallGO;
-    Rigidbody bowlingBallRB;
+    [SerializeField] Transform handTransform;
 
+    Rigidbody bowlingBallRB;
+    Collider ballCollider;
+    bool isHeld = false;
+    bool hasBeenThrown = false;
+    Vector3 direction;
     #endregion Variables
 
-    #region PublicMethods
+    #region UnityMethods
     void Start() {
         bowlingBallRB = GetComponent<Rigidbody>();
+        ballCollider = GetComponent<Collider>();
     }
+
     void Update() {
-        if (Input.GetKeyDown(KeyCode.E))
-            MovBowlingBallForwardInteract();
+        float distanceToPlayer = Vector3.Distance(transform.position, playerTransform.position);
+        if (!isHeld && !hasBeenThrown && distanceToPlayer <= interactDistance && Input.GetKeyDown(KeyCode.E)) {
+
+            // Previene tomar múltiples bolas si ya hay una en mano (ChatGPT)
+            bowlingBallForce existingBall = FindObjectOfType<bowlingBallForce>();
+            if (existingBall != null && existingBall.isHeld)
+                return;
+
+            PickUpBall();
+        }
+        if (isHeld && Input.GetKeyDown(KeyCode.Q)) {
+            ThrowBall();
+        }
+        if (isHeld && !hasBeenThrown) {
+            transform.position = handTransform.position;
+        }
     }
+    #endregion UnityMethods
 
-    #endregion PublicMethods
+    #region BallLogic
+    public void PickUpBall() {
+        isHeld = true;
+        bowlingBallRB.isKinematic = true;
+        bowlingBallRB.useGravity = false;
 
-    #region MoveBall
-    public void MovBowlingBallForwardInteract() {
+        transform.SetParent(handTransform);
+        ballCollider.enabled = false; 
+
+        Debug.Log("Bola recogida.");
+    }
+    public void ThrowBall() {
+        isHeld = false;
+        hasBeenThrown = true;
+
+        transform.SetParent(null); 
+        transform.position = handTransform.position;
+        bowlingBallRB.isKinematic = false;
+        bowlingBallRB.useGravity = true;
+        ballCollider.enabled = true; 
+
         direction = (bowlingPines.position - transform.position).normalized;
-        Debug.Log("avance a la direccion correcta? para EL BOLICHE");
-        bowlingBallRB.AddForce(direction * 20 * moveSpeed * Time.deltaTime, ForceMode.Impulse);
-        Debug.Log("le agrego la fuerza y velocidad, para EL BOLICHE");
+        bowlingBallRB.AddForce(direction * moveSpeed, ForceMode.Impulse);
+
+        Debug.Log("¡Bola lanzada!");
     }
+    #endregion BallLogic
 
-    #endregion MoveBall
-
-    #region CollsionDestroy
-    public void OnCollisionEnter(Collision collision) {
+    #region CollisionDestroy
+    void OnCollisionEnter(Collision collision) {
         if (collision.gameObject.CompareTag("BowlPine")) {
             StartCoroutine(DestroyAfterSeconds(6f));
         }
     }
     IEnumerator DestroyAfterSeconds(float seconds) {
         yield return new WaitForSeconds(seconds);
-        Destroy(gameObject, 6f);
+        Destroy(gameObject);
     }
-    #endregion CollsionDestroy
+    #endregion CollisionDestroy
 }

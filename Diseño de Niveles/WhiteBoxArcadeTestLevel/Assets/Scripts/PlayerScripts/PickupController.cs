@@ -181,7 +181,7 @@ public class PickupController : MonoBehaviour {
         transform.SetParent(null);
 
         if (CompareTag("BowlBall") && scrip_bowlingBallForce != null) {
-            scrip_bowlingBallForce.MovBowlingBallForwardInteract();
+            scrip_bowlingBallForce.ThrowBall();
         }
         if (CompareTag("BomberTruck") && script_BomberTruckMovingForward != null) {
             script_BomberTruckMovingForward.StartMoving();
